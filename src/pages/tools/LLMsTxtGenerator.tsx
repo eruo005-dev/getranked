@@ -146,7 +146,7 @@ export default function LLMsTxtGenerator() {
   const [errors, setErrors] = useState<Record<string, string>>({})
 
   useEffect(() => {
-    document.title = 'llms.txt Generator — getranked.ng'
+    document.title = 'llms.txt Generator — getranked'
   }, [])
 
   const preview = useMemo(() => buildLlmsTxt(form), [form])
@@ -225,7 +225,7 @@ export default function LLMsTxtGenerator() {
   }
 
   const inputCls =
-    'w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)]'
+    'w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)]'
   const errCls = 'border-red-500/60 focus:ring-red-500/40 focus:border-red-500/50'
 
   return (
@@ -233,7 +233,7 @@ export default function LLMsTxtGenerator() {
       <Toaster richColors position="bottom-right" />
 
       <div
-        className="absolute rounded-full blur-[120px] pointer-events-none w-[500px] h-[500px] bg-amber-500/10 -top-48 -left-48"
+        className="absolute rounded-full blur-[120px] pointer-events-none w-[500px] h-[500px] bg-emerald-500/10 -top-48 -left-48"
         aria-hidden="true"
       />
       <div
@@ -249,7 +249,7 @@ export default function LLMsTxtGenerator() {
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center"
           >
-            <span className="eyebrow bg-amber-500/10 text-[var(--accent-amber)] mb-6">
+            <span className="eyebrow bg-emerald-500/10 text-[var(--accent-amber)] mb-6">
               <Sparkles className="w-3.5 h-3.5" />
               FREE GEO TOOL
             </span>
@@ -292,7 +292,7 @@ export default function LLMsTxtGenerator() {
             className="glass-panel p-6 md:p-8"
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center">
                 <Bot className="w-5 h-5 text-[var(--accent-amber)]" />
               </div>
               <div>
@@ -332,7 +332,7 @@ export default function LLMsTxtGenerator() {
               className="glass-panel p-6 md:p-8"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-9 h-9 rounded-lg bg-amber-500/15 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-lg bg-emerald-500/15 flex items-center justify-center">
                   <FileCode className="w-4 h-4 text-[var(--accent-amber)]" />
                 </div>
                 <h2 className="text-heading-3 text-[var(--text-primary)]">Your site details</h2>
@@ -502,7 +502,7 @@ export default function LLMsTxtGenerator() {
                   <button
                     type="button"
                     onClick={handleCopy}
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[var(--accent-amber)] text-[#0A0F1A] font-jakarta font-semibold text-sm transition-all duration-200 hover:bg-[var(--accent-amber-hover)] hover:scale-[1.02] active:scale-[0.98]"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[var(--accent-amber)] text-[var(--brand-on-primary)] font-jakarta font-semibold text-sm transition-all duration-200 hover:bg-[var(--accent-amber-hover)] hover:scale-[1.02] active:scale-[0.98]"
                     aria-label="Copy llms.txt to clipboard"
                   >
                     {copied ? (
@@ -542,7 +542,7 @@ export default function LLMsTxtGenerator() {
                     <div className="flex items-center gap-2">
                       <div className="flex items-center gap-1.5">
                         <span className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
-                        <span className="w-2.5 h-2.5 rounded-full bg-amber-500/70" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/70" />
                         <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/70" />
                       </div>
                       <span className="text-xs font-mono text-white/60 ml-2">llms.txt</span>
@@ -599,7 +599,7 @@ function PageListEditor({
         <button
           type="button"
           onClick={onAdd}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/15 text-[var(--accent-amber)] text-xs font-semibold transition-colors hover:bg-amber-500/25"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/15 text-[var(--accent-amber)] text-xs font-semibold transition-colors hover:bg-emerald-500/25"
           aria-label={`Add a row to ${title}`}
         >
           <Plus className="w-3.5 h-3.5" />
@@ -623,7 +623,7 @@ function PageListEditor({
               placeholder="Label"
               value={row.label}
               onChange={e => onChange(row.id, 'label', e.target.value)}
-              className="col-span-12 sm:col-span-3 px-3 py-2 rounded-lg bg-[var(--bg-tertiary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-xs focus:outline-none focus:ring-2 focus:ring-amber-500/40"
+              className="col-span-12 sm:col-span-3 px-3 py-2 rounded-lg bg-[var(--bg-tertiary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
               aria-label={`${title} row ${idx + 1} label`}
             />
             <input
@@ -631,7 +631,7 @@ function PageListEditor({
               placeholder="/path or full URL"
               value={row.url}
               onChange={e => onChange(row.id, 'url', e.target.value)}
-              className="col-span-12 sm:col-span-3 px-3 py-2 rounded-lg bg-[var(--bg-tertiary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-xs font-mono focus:outline-none focus:ring-2 focus:ring-amber-500/40"
+              className="col-span-12 sm:col-span-3 px-3 py-2 rounded-lg bg-[var(--bg-tertiary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-xs font-mono focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
               aria-label={`${title} row ${idx + 1} url`}
             />
             <input
@@ -639,7 +639,7 @@ function PageListEditor({
               placeholder="Short description"
               value={row.description}
               onChange={e => onChange(row.id, 'description', e.target.value)}
-              className="col-span-10 sm:col-span-5 px-3 py-2 rounded-lg bg-[var(--bg-tertiary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-xs focus:outline-none focus:ring-2 focus:ring-amber-500/40"
+              className="col-span-10 sm:col-span-5 px-3 py-2 rounded-lg bg-[var(--bg-tertiary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
               aria-label={`${title} row ${idx + 1} description`}
             />
             <button
@@ -661,7 +661,7 @@ function highlightMarkdown(text: string) {
   const lines = text.split('\n')
   return lines.map((line, i) => {
     let className = ''
-    if (line.startsWith('# ')) className = 'text-amber-400 font-semibold'
+    if (line.startsWith('# ')) className = 'text-emerald-400 font-semibold'
     else if (line.startsWith('## ')) className = 'text-teal-300 font-semibold'
     else if (line.startsWith('> ')) className = 'text-purple-300 italic'
     else if (line.startsWith('- ')) className = 'text-white/85'

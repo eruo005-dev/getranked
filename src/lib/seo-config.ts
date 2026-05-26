@@ -1,5 +1,5 @@
 export const SITE_URL = 'https://getranked.ng'
-export const SITE_NAME = 'getranked.ng'
+export const SITE_NAME = 'getranked'
 export const DEFAULT_OG = '/og-image.png'
 export const TWITTER_HANDLE = '@getrankedng'
 export const DEFAULT_DESCRIPTION =
@@ -41,13 +41,13 @@ export const routeMeta: Record<string, RouteMeta> = {
   '/about': {
     title: 'About — Built in Lagos for Nigerian Businesses',
     description:
-      'Built in Lagos by SEO operators who got tired of foreign tools that ignore Nigerian search intent. Meet the team behind getranked.ng.',
+      'Built in Lagos by SEO operators who got tired of foreign tools that ignore Nigerian search intent. Meet the team behind getranked.',
     keywords: ['about getranked', 'Nigerian SEO company', 'Lagos SEO startup'],
   },
   '/contact': {
-    title: 'Contact — Talk to the getranked.ng Team',
+    title: 'Contact — Talk to the getranked Team',
     description:
-      'Reach the getranked.ng team. WhatsApp, email or book a demo. Lagos-based support, Nigerian business hours, fast replies.',
+      'Reach the getranked team. WhatsApp, email or book a demo. Lagos-based support, Nigerian business hours, fast replies.',
     keywords: ['contact getranked', 'SEO support Nigeria', 'book SEO demo Lagos'],
   },
   '/blog': {
@@ -94,11 +94,11 @@ export const routeMeta: Record<string, RouteMeta> = {
   },
   '/login': {
     title: 'Sign In',
-    description: 'Sign in to your getranked.ng account to manage SEO + GEO campaigns, track AI citations and view reports.',
+    description: 'Sign in to your getranked account to manage SEO + GEO campaigns, track AI citations and view reports.',
     keywords: ['login getranked', 'SEO dashboard login'],
   },
   '/register': {
-    title: 'Get Started — Create Your getranked.ng Account',
+    title: 'Get Started — Create Your getranked Account',
     description:
       'Start your free GEO audit and 14-day trial. No card required. Built for Nigerian businesses ready to rank everywhere search happens.',
     keywords: ['signup getranked', 'free SEO trial Nigeria', 'GEO trial'],
@@ -106,12 +106,12 @@ export const routeMeta: Record<string, RouteMeta> = {
   '/privacy': {
     title: 'Privacy Policy',
     description:
-      "How getranked.ng collects, uses and protects your data. NDPR-compliant, Nigerian-first privacy practices.",
+      "How getranked collects, uses and protects your data. NDPR-compliant, Nigerian-first privacy practices.",
     keywords: ['privacy policy', 'NDPR compliance'],
   },
   '/terms': {
     title: 'Terms of Service',
-    description: 'The terms governing your use of getranked.ng SEO + GEO products and services.',
+    description: 'The terms governing your use of getranked SEO + GEO products and services.',
     keywords: ['terms of service', 'getranked terms'],
   },
 }

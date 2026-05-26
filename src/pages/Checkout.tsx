@@ -98,7 +98,7 @@ const plans: Plan[] = [
     period: '/mo',
     description: 'Perfect for small businesses starting their GEO journey.',
     icon: Zap,
-    color: 'text-amber-500',
+    color: 'text-emerald-500',
     features: [
       'GEO Audit included',
       'LLMs.txt Generator',
@@ -233,7 +233,7 @@ export default function Checkout() {
   return (
     <div className="relative overflow-hidden">
       {/* ─── Ambient Glow Orbs ─── */}
-      <GlowOrb className="w-[500px] h-[500px] bg-amber-500/8 -top-48 -right-48" />
+      <GlowOrb className="w-[500px] h-[500px] bg-emerald-500/8 -top-48 -right-48" />
       <GlowOrb className="w-[400px] h-[400px] bg-purple-500/8 top-[40%] -left-48" />
 
       {/* ═══════════ SUCCESS STATE ═══════════ */}
@@ -345,7 +345,7 @@ export default function Checkout() {
                   {/* Plan Selection */}
                   <div className="glass-panel p-6">
                     <h2 className="text-heading-3 text-[var(--text-primary)] mb-4 flex items-center gap-2">
-                      <Package className="w-5 h-5 text-amber-500" />
+                      <Package className="w-5 h-5 text-emerald-500" />
                       Select Your Plan
                     </h2>
 
@@ -358,7 +358,7 @@ export default function Checkout() {
                         type="button"
                         onClick={() => setIsAnnual(!isAnnual)}
                         className={`relative w-12 h-6 rounded-full transition-colors duration-300 ${
-                          isAnnual ? 'bg-amber-500' : 'bg-[var(--bg-tertiary)] border border-[var(--border-default)]'
+                          isAnnual ? 'bg-emerald-500' : 'bg-[var(--bg-tertiary)] border border-[var(--border-default)]'
                         }`}
                       >
                         <motion.div
@@ -389,7 +389,7 @@ export default function Checkout() {
                             onClick={() => setSelectedPlan(plan.id)}
                             className={`relative p-4 rounded-xl border-2 text-left transition-all duration-200 ${
                               isSelected
-                                ? plan.id === 'starter' ? 'border-amber-500 bg-amber-500/5' :
+                                ? plan.id === 'starter' ? 'border-emerald-500 bg-emerald-500/5' :
                                   plan.id === 'growth' ? 'border-teal-500 bg-teal-500/5' :
                                   'border-purple-500 bg-purple-500/5'
                                 : 'border-[var(--border-default)] bg-transparent hover:border-[var(--border-hover)]'
@@ -428,7 +428,7 @@ export default function Checkout() {
                           placeholder="John Doe"
                           value={formData.fullName}
                           onChange={e => handleInputChange('fullName', e.target.value)}
-                          className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)]"
+                          className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)]"
                         />
                       </div>
                       <div>
@@ -441,7 +441,7 @@ export default function Checkout() {
                           placeholder="john@company.com"
                           value={formData.email}
                           onChange={e => handleInputChange('email', e.target.value)}
-                          className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)]"
+                          className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)]"
                         />
                       </div>
                       <div>
@@ -454,7 +454,7 @@ export default function Checkout() {
                           placeholder="+234 800 000 0000"
                           value={formData.phone}
                           onChange={e => handleInputChange('phone', e.target.value)}
-                          className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)]"
+                          className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)]"
                         />
                       </div>
                       <div>
@@ -466,7 +466,7 @@ export default function Checkout() {
                           placeholder="Acme Inc."
                           value={formData.company}
                           onChange={e => handleInputChange('company', e.target.value)}
-                          className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)]"
+                          className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)]"
                         />
                       </div>
                     </div>
@@ -563,7 +563,7 @@ export default function Checkout() {
                             value={formData.cardNumber}
                             onChange={e => handleInputChange('cardNumber', formatCardNumber(e.target.value))}
                             maxLength={19}
-                            className="w-full pl-11 pr-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)] font-mono tracking-wider"
+                            className="w-full pl-11 pr-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)] font-mono tracking-wider"
                           />
                           <CreditCard className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--text-muted)]" />
                         </div>
@@ -581,7 +581,7 @@ export default function Checkout() {
                             value={formData.cardExpiry}
                             onChange={e => handleInputChange('cardExpiry', formatExpiry(e.target.value))}
                             maxLength={5}
-                            className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)] font-mono"
+                            className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)] font-mono"
                           />
                         </div>
                         <div>
@@ -595,7 +595,7 @@ export default function Checkout() {
                             value={formData.cardCvv}
                             onChange={e => handleInputChange('cardCvv', e.target.value.replace(/\D/g, '').substring(0, 3))}
                             maxLength={3}
-                            className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)] font-mono tracking-widest"
+                            className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)] font-mono tracking-widest"
                           />
                         </div>
                         <div className="col-span-2 sm:col-span-1">
@@ -607,7 +607,7 @@ export default function Checkout() {
                             placeholder="JOHN DOE"
                             value={formData.cardName}
                             onChange={e => handleInputChange('cardName', e.target.value.toUpperCase())}
-                            className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)]"
+                            className="w-full px-4 py-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)]"
                           />
                         </div>
                       </div>
@@ -689,7 +689,7 @@ export default function Checkout() {
                       {/* Plan Details */}
                       <div className="flex items-start gap-4 mb-5 pb-5 border-b border-[var(--border-default)]">
                         <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${
-                          selectedPlan === 'starter' ? 'bg-amber-500/15' :
+                          selectedPlan === 'starter' ? 'bg-emerald-500/15' :
                           selectedPlan === 'growth' ? 'bg-teal-500/15' :
                           'bg-purple-500/15'
                         }`}>
@@ -777,7 +777,7 @@ export default function Checkout() {
                     {/* Security Note */}
                     <div className="glass-panel p-5">
                       <div className="flex items-start gap-3">
-                        <Shield className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <Shield className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
                         <div>
                           <p className="text-sm font-medium text-[var(--text-primary)] mb-1">
                             Secure Payment

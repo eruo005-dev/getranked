@@ -35,10 +35,10 @@ export default function Privacy() {
   const [activeId, setActiveId] = useState<string>('introduction')
 
   useEffect(() => {
-    document.title = 'Privacy Policy — getranked.ng'
+    document.title = 'Privacy Policy — getranked'
     const meta = document.querySelector('meta[name="description"]')
     const description =
-      "getranked.ng's privacy policy. How we collect, use and protect your data under Nigeria's NDPR — written in plain English for Nigerian businesses."
+      "getranked's privacy policy. How we collect, use and protect your data under Nigeria's NDPR — written in plain English for Nigerian businesses."
     if (meta) {
       meta.setAttribute('content', description)
     } else {
@@ -211,7 +211,7 @@ export default function Privacy() {
           <article className="max-w-[760px]">
             <Section id="introduction" n="1" title="Introduction">
               <p>
-                getranked.ng ("we", "us", "our") is a Nigerian SEO and Generative Engine Optimisation
+                getranked ("we", "us", "our") is a Nigerian SEO and Generative Engine Optimisation
                 (GEO) platform operated from Lagos, Nigeria. This Privacy Policy explains what
                 information we collect when you visit our website, run an audit, subscribe to a plan,
                 or contact our support team — and what we do with that information once it's in our
@@ -220,7 +220,7 @@ export default function Privacy() {
               <p>
                 We've written this policy to comply with the Nigeria Data Protection Regulation (NDPR)
                 issued by the National Information Technology Development Agency (NITDA), as well as
-                international best practice. By using getranked.ng, you agree to the practices
+                international best practice. By using getranked, you agree to the practices
                 described here. If you don't agree, please stop using the service.
               </p>
             </Section>
@@ -299,7 +299,7 @@ export default function Privacy() {
                 Your account data is stored primarily on infrastructure located in the European Union
                 and the United States, operated by tier-1 cloud providers (AWS and Google Cloud).
                 Site-audit data and reports are stored in encrypted-at-rest databases with
-                role-restricted access. All connections between your browser and getranked.ng are
+                role-restricted access. All connections between your browser and getranked are
                 encrypted using TLS 1.3.
               </p>
               <p>
@@ -385,7 +385,7 @@ export default function Privacy() {
 
             <Section id="children-privacy" n="9" title="Children's privacy">
               <p>
-                getranked.ng is a B2B service for Nigerian businesses. It is not intended for, and we
+                getranked is a B2B service for Nigerian businesses. It is not intended for, and we
                 do not knowingly collect personal data from, anyone under the age of 18. If you
                 believe a minor has created an account, please contact us and we will delete the
                 account and any associated data without delay.
@@ -400,7 +400,7 @@ export default function Privacy() {
                 notify active subscribers by email at least 14 days before the changes take effect.
               </p>
               <p>
-                Continued use of getranked.ng after a policy change means you accept the updated
+                Continued use of getranked after a policy change means you accept the updated
                 policy. If you don't agree, you can close your account at any time and we'll delete
                 your data in line with section 6.
               </p>
@@ -418,7 +418,7 @@ export default function Privacy() {
                   DATA PROTECTION OFFICER
                 </p>
                 <p className="text-body-lg text-[var(--text-primary)] font-semibold mb-1">
-                  getranked.ng — Office of the DPO
+                  getranked — Office of the DPO
                 </p>
                 <p className="text-body-sm text-[var(--text-secondary)] mb-4">
                   Yaba, Lagos, Federal Republic of Nigeria

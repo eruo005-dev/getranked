@@ -24,7 +24,7 @@ const fadeUpProps = {
 const FEATURES = [
   { icon: MessageCircle, title: 'WhatsApp delivery', desc: 'Auto-send monthly PDFs to your client\'s WhatsApp. They open it on the device they actually use.', accent: 'var(--accent-green)', rgb: '16,185,129' },
   { icon: FileText, title: 'PDF + interactive web', desc: 'Every report ships in two formats — a downloadable PDF and a shareable live URL.', accent: 'var(--accent-blue)', rgb: '59,130,246' },
-  { icon: Palette, title: 'White-label branding', desc: 'Your logo, your colour palette, your fonts. Zero getranked.ng branding visible.', accent: 'var(--accent-amber)', rgb: '245,158,11' },
+  { icon: Palette, title: 'White-label branding', desc: 'Your logo, your colour palette, your fonts. Zero getranked branding visible.', accent: 'var(--accent-amber)', rgb: '5, 150, 105' },
   { icon: Globe2, title: 'Custom domain', desc: 'Host reports on reports.youragency.ng. Enterprise plans get full DNS handover.', accent: 'var(--accent-purple)', rgb: '139,92,246' },
   { icon: CalendarClock, title: 'Scheduled monthly', desc: 'Set it once. Every client gets their PDF on the 1st of the month, automatically.', accent: 'var(--accent-teal)', rgb: '20,184,166' },
   { icon: Smartphone, title: 'Mobile-first design', desc: 'Most Nigerian clients open reports on phones. Ours are designed for thumbs, not desktops.', accent: 'var(--accent-red)', rgb: '239,68,68' },
@@ -62,7 +62,7 @@ const TEMPLATES = [
 
 export default function Reporting() {
   useEffect(() => {
-    document.title = 'White-Label Reporting — getranked.ng'
+    document.title = 'White-Label Reporting — getranked'
   }, [])
 
   return (
@@ -72,11 +72,11 @@ export default function Reporting() {
         <div
           className="absolute pointer-events-none"
           style={{ top: '-15%', left: '50%', transform: 'translateX(-50%)', width: '760px', height: '760px',
-            background: 'radial-gradient(circle, rgba(245,158,11,0.14) 0%, transparent 70%)', filter: 'blur(80px)' }}
+            background: 'radial-gradient(circle, rgba(5, 150, 105,0.14) 0%, transparent 70%)', filter: 'blur(80px)' }}
         />
         <div className="container-main relative z-10 text-center">
           <motion.div {...fadeUpProps} custom={0}>
-            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(245,158,11,0.2)] bg-[rgba(245,158,11,0.1)] text-[var(--accent-amber)] text-label">
+            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(5, 150, 105,0.2)] bg-[rgba(5, 150, 105,0.1)] text-[var(--accent-amber)] text-label">
               WHITE-LABEL REPORTING
             </span>
           </motion.div>
@@ -103,7 +103,7 @@ export default function Reporting() {
           <motion.div className="max-w-[920px] mx-auto" {...fadeUpProps} custom={0}>
             <div
               className="absolute inset-x-0 -z-10 h-full max-h-[500px] mx-auto rounded-3xl blur-2xl opacity-40"
-              style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.18), rgba(20,184,166,0.18))' }}
+              style={{ background: 'linear-gradient(135deg, rgba(5, 150, 105,0.18), rgba(20,184,166,0.18))' }}
             />
             <div className="card-base p-6 md:p-10 relative overflow-hidden">
               {/* Branded header */}
@@ -274,7 +274,7 @@ export default function Reporting() {
                 <div className="card-base p-7 h-full group cursor-pointer relative overflow-hidden">
                   <div
                     className="absolute -top-16 -right-16 w-48 h-48 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                    style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 70%)', filter: 'blur(40px)' }}
+                    style={{ background: 'radial-gradient(circle, rgba(5, 150, 105,0.12) 0%, transparent 70%)', filter: 'blur(40px)' }}
                   />
                   <div className="flex items-start justify-between mb-4 relative">
                     <div className="w-11 h-11 rounded-xl bg-[var(--bg-tertiary)] border border-[var(--border-default)] flex items-center justify-center">
@@ -325,7 +325,7 @@ export default function Reporting() {
             <div className="card-base p-8 md:p-12 relative overflow-hidden">
               <div
                 className="absolute -top-20 -right-20 w-72 h-72 rounded-full pointer-events-none"
-                style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.10) 0%, transparent 70%)', filter: 'blur(60px)' }}
+                style={{ background: 'radial-gradient(circle, rgba(5, 150, 105,0.10) 0%, transparent 70%)', filter: 'blur(60px)' }}
               />
               <span className="absolute top-6 left-6 text-7xl font-outfit font-extrabold text-[var(--accent-amber)] opacity-20 leading-none">&ldquo;</span>
               <div className="relative pt-6">
@@ -357,7 +357,7 @@ export default function Reporting() {
         <div
           className="absolute pointer-events-none"
           style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '800px', height: '400px',
-            background: 'radial-gradient(ellipse, rgba(245,158,11,0.12) 0%, transparent 70%)', filter: 'blur(80px)' }}
+            background: 'radial-gradient(ellipse, rgba(5, 150, 105,0.12) 0%, transparent 70%)', filter: 'blur(80px)' }}
         />
         <motion.div className="container-main relative z-10 text-center" {...fadeUpProps} custom={0}>
           <div className="flex items-center justify-center mb-6">

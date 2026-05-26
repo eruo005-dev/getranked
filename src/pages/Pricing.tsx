@@ -106,11 +106,11 @@ const plans = [
     name: 'Starter',
     description: 'Perfect for small businesses',
     eyebrow: 'STARTER',
-    eyebrowColor: 'bg-amber-500/15 text-amber-500',
+    eyebrowColor: 'bg-emerald-500/15 text-emerald-500',
     price: '150,000',
     period: '/mo',
     featured: false,
-    glowClass: 'ring-1 ring-amber-500/30',
+    glowClass: 'ring-1 ring-emerald-500/30',
     features: [
       'Everything in GEO Audit',
       'LLMs.txt Generator',
@@ -131,11 +131,11 @@ const plans = [
     name: 'Growth',
     description: 'For scaling companies',
     eyebrow: 'MOST POPULAR',
-    eyebrowColor: 'bg-amber-500/15 text-amber-500',
+    eyebrowColor: 'bg-emerald-500/15 text-emerald-500',
     price: '500,000',
     period: '/mo',
     featured: true,
-    glowClass: 'ring-2 ring-amber-500/50 animate-glow-pulse',
+    glowClass: 'ring-2 ring-emerald-500/50 animate-glow-pulse',
     features: [
       'Everything in Starter',
       '20 GEO Content Briefs/mo',
@@ -222,7 +222,7 @@ export default function Pricing() {
   return (
     <div className="relative overflow-hidden">
       {/* ─── Ambient Glow Orbs ─── */}
-      <GlowOrb className="w-[500px] h-[500px] bg-amber-500/10 -top-48 -left-48" />
+      <GlowOrb className="w-[500px] h-[500px] bg-emerald-500/10 -top-48 -left-48" />
       <GlowOrb className="w-[400px] h-[400px] bg-purple-500/10 top-[20%] -right-48" />
       <GlowOrb className="w-[350px] h-[350px] bg-teal-500/8 top-[50%] -left-32" />
 
@@ -235,7 +235,7 @@ export default function Pricing() {
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center"
           >
-            <span className="eyebrow bg-amber-500/10 text-amber-500 mb-6">
+            <span className="eyebrow bg-emerald-500/10 text-emerald-500 mb-6">
               <Star className="w-3.5 h-3.5" />
               PRICING
             </span>
@@ -262,7 +262,7 @@ export default function Pricing() {
               onClick={() => setIsAnnual(false)}
               className={`relative px-6 py-2.5 rounded-full font-jakarta font-semibold text-sm transition-all duration-300 ${
                 !isAnnual
-                  ? 'bg-amber-500 text-[#0A0F1A] shadow-glow'
+                  ? 'bg-emerald-500 text-[var(--brand-on-primary)] shadow-glow'
                   : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
               }`}
             >
@@ -272,13 +272,13 @@ export default function Pricing() {
               onClick={() => setIsAnnual(true)}
               className={`relative px-6 py-2.5 rounded-full font-jakarta font-semibold text-sm transition-all duration-300 flex items-center gap-2 ${
                 isAnnual
-                  ? 'bg-amber-500 text-[#0A0F1A] shadow-glow'
+                  ? 'bg-emerald-500 text-[var(--brand-on-primary)] shadow-glow'
                   : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
               }`}
             >
               Annual
               <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
-                isAnnual ? 'bg-[#0A0F1A]/20' : 'bg-emerald-500/15 text-emerald-500'
+                isAnnual ? 'bg-[#04140C]/20' : 'bg-emerald-500/15 text-emerald-500'
               }`}>
                 Save 20%
               </span>
@@ -304,7 +304,7 @@ export default function Pricing() {
                   {/* Featured badge */}
                   {plan.featured && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500 text-[#0A0F1A] text-xs font-bold">
+                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-500 text-[var(--brand-on-primary)] text-xs font-bold">
                         <Sparkles className="w-3 h-3" />
                         MOST POPULAR
                       </span>
@@ -312,7 +312,7 @@ export default function Pricing() {
                   )}
 
                   <div className={`card-base p-6 flex flex-col flex-1 ${
-                    plan.featured ? 'border-amber-500/40 bg-gradient-to-b from-amber-500/5 to-transparent' : ''
+                    plan.featured ? 'border-emerald-500/40 bg-gradient-to-b from-emerald-500/5 to-transparent' : ''
                   }`}>
                     {/* Header */}
                     <div className="mb-5">
@@ -327,7 +327,7 @@ export default function Pricing() {
                         <Icon className={`w-5 h-5 ${
                           plan.id === 'geo' ? 'text-[var(--text-muted)]' :
                           plan.id === 'starter' ? 'text-[var(--text-secondary)]' :
-                          plan.id === 'growth' ? 'text-amber-500' :
+                          plan.id === 'growth' ? 'text-emerald-500' :
                           'text-purple-500'
                         }`} />
                         <h3 className="text-heading-3 text-[var(--text-primary)]">{plan.name}</h3>
@@ -376,7 +376,7 @@ export default function Pricing() {
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
                           <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
-                            plan.featured ? 'text-amber-500' : 'text-emerald-500'
+                            plan.featured ? 'text-emerald-500' : 'text-emerald-500'
                           }`} />
                           <span className="text-sm text-[var(--text-secondary)]">{feature}</span>
                         </li>
@@ -436,7 +436,7 @@ export default function Pricing() {
                         Starter
                       </span>
                     </th>
-                    <th className="text-center py-4 px-4 text-sm font-semibold text-amber-500 w-[16%] bg-amber-500/5">
+                    <th className="text-center py-4 px-4 text-sm font-semibold text-emerald-500 w-[16%] bg-emerald-500/5">
                       <span className="inline-flex items-center gap-1">
                         <Star className="w-3.5 h-3.5" />
                         Growth
@@ -464,7 +464,7 @@ export default function Pricing() {
                       <td className="py-3.5 px-4 text-center">
                         {renderCell(feature.starter)}
                       </td>
-                      <td className="py-3.5 px-4 text-center bg-amber-500/[0.04]">
+                      <td className="py-3.5 px-4 text-center bg-emerald-500/[0.04]">
                         {renderCell(feature.growth)}
                       </td>
                       <td className="py-3.5 px-4 text-center">
@@ -584,9 +584,9 @@ export default function Pricing() {
                 <AccordionItem
                   key={index}
                   value={`faq-${index}`}
-                  className="glass-panel border-0 rounded-xl overflow-hidden px-6 data-[state=open]:border-amber-500/30 transition-colors"
+                  className="glass-panel border-0 rounded-xl overflow-hidden px-6 data-[state=open]:border-emerald-500/30 transition-colors"
                 >
-                  <AccordionTrigger className="text-left text-[var(--text-primary)] font-semibold text-sm py-5 hover:no-underline [&[data-state=open]>svg]:text-amber-500">
+                  <AccordionTrigger className="text-left text-[var(--text-primary)] font-semibold text-sm py-5 hover:no-underline [&[data-state=open]>svg]:text-emerald-500">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-[var(--text-secondary)] text-sm leading-relaxed pb-5">
@@ -607,10 +607,10 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.5 }}
-            className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-amber-500/20 via-amber-500/5 to-transparent border border-amber-500/20 p-10 md:p-16 text-center"
+            className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-emerald-500/20 via-emerald-500/5 to-transparent border border-emerald-500/20 p-10 md:p-16 text-center"
           >
             {/* Glow effect */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-amber-500/20 rounded-full blur-[100px] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-emerald-500/20 rounded-full blur-[100px] pointer-events-none" />
 
             <div className="relative z-10">
               <h2 className="text-heading-1 text-[var(--text-primary)] mb-4">

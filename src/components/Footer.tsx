@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mail, MessageCircle } from 'lucide-react'
+import Wordmark from '@/components/Wordmark'
 
 const productLinks = [
   { label: 'Features', href: '/features' },
@@ -38,10 +39,9 @@ export default function Footer() {
         {/* Brand row */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12">
           <div className="lg:col-span-4">
-            <Link to="/" className="inline-flex items-center gap-2 mb-4">
-              <img src="/logo-icon.svg" alt="" className="w-8 h-8" />
-              <img src="/logo.svg" alt="getranked.ng" className="h-6" />
-            </Link>
+            <div className="mb-4 text-[var(--text-primary)]">
+              <Wordmark size="md" />
+            </div>
             <p className="text-body-sm text-[var(--text-secondary)] max-w-xs mb-6 leading-relaxed">
               Nigeria&apos;s #1 SEO &amp; GEO platform. Built for African businesses to dominate AI search and Google rankings.
             </p>
@@ -143,7 +143,7 @@ export default function Footer() {
       <div className="border-t border-[var(--border-default)]">
         <div className="container-main py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[var(--text-muted)] order-2 md:order-1">
-            &copy; {new Date().getFullYear()} getranked.ng &middot; All rights reserved.
+            &copy; {new Date().getFullYear()} getranked &middot; All rights reserved.
           </p>
           <p className="text-xs text-[var(--text-muted)] order-1 md:order-2">
             Made in Lagos <span aria-hidden>&#127475;&#127468;</span> &middot; Built for Africa

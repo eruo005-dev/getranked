@@ -37,7 +37,7 @@ function Eyebrow({
   children: React.ReactNode
 }) {
   const map = {
-    amber: 'border-[rgba(245,158,11,0.25)] bg-[rgba(245,158,11,0.08)] text-[var(--accent-amber)]',
+    amber: 'border-[rgba(5, 150, 105,0.25)] bg-[rgba(5, 150, 105,0.08)] text-[var(--accent-amber)]',
     teal: 'border-[rgba(20,184,166,0.25)] bg-[rgba(20,184,166,0.08)] text-[var(--accent-teal)]',
     purple: 'border-[rgba(139,92,246,0.25)] bg-[rgba(139,92,246,0.08)] text-[var(--accent-purple)]',
     blue: 'border-[rgba(59,130,246,0.25)] bg-[rgba(59,130,246,0.08)] text-[var(--accent-blue)]',
@@ -87,7 +87,7 @@ function Hero() {
         className="absolute inset-0 -z-10 opacity-[0.55] dark:opacity-100"
         style={{
           background:
-            'radial-gradient(60% 50% at 50% 0%, rgba(245,158,11,0.18) 0%, transparent 65%), radial-gradient(40% 40% at 90% 30%, rgba(139,92,246,0.10) 0%, transparent 70%), radial-gradient(40% 40% at 10% 60%, rgba(20,184,166,0.08) 0%, transparent 70%)',
+            'radial-gradient(60% 50% at 50% 0%, rgba(5, 150, 105,0.18) 0%, transparent 65%), radial-gradient(40% 40% at 90% 30%, rgba(139,92,246,0.10) 0%, transparent 70%), radial-gradient(40% 40% at 10% 60%, rgba(20,184,166,0.08) 0%, transparent 70%)',
         }}
       />
       <div
@@ -187,13 +187,13 @@ function Hero() {
             className="absolute -inset-x-20 -inset-y-10 -z-10 rounded-[40px] opacity-70 blur-3xl"
             style={{
               background:
-                'linear-gradient(135deg, rgba(245,158,11,0.18), rgba(139,92,246,0.14), rgba(20,184,166,0.12))',
+                'linear-gradient(135deg, rgba(5, 150, 105,0.18), rgba(139,92,246,0.14), rgba(20,184,166,0.12))',
             }}
           />
           <div className="rounded-2xl md:rounded-3xl border border-[var(--border-default)] bg-[var(--bg-secondary)] shadow-2xl overflow-hidden">
             <div className="flex items-center gap-2 px-4 py-3 border-b border-[var(--border-default)] bg-[var(--bg-tertiary)]">
               <span className="w-2.5 h-2.5 rounded-full bg-[#EF4444]/70" />
-              <span className="w-2.5 h-2.5 rounded-full bg-[#F59E0B]/70" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[#059669]/70" />
               <span className="w-2.5 h-2.5 rounded-full bg-[#10B981]/70" />
               <span className="ml-3 text-xs font-mono text-[var(--text-muted)]">
                 app.getranked.ng / dashboard
@@ -201,7 +201,7 @@ function Hero() {
             </div>
             <img
               src="/hero-dashboard-mockup.png"
-              alt="getranked.ng dashboard showing AI visibility scoring, LLM citations and Nigerian local SEO"
+              alt="getranked dashboard showing AI visibility scoring, LLM citations and Nigerian local SEO"
               className="block w-full h-auto"
               loading="eager"
               decoding="async"
@@ -240,7 +240,7 @@ function ProblemSection() {
   const stats = [
     { value: '73%', label: 'of Nigerian SMEs are invisible on ChatGPT, Claude and Perplexity' },
     { value: '₦5.1B', label: 'in Google searches happen in Nigeria every year' },
-    { value: '0', label: 'local agencies offer GEO before getranked.ng' },
+    { value: '0', label: 'local agencies offer GEO before getranked' },
   ]
   return (
     <section className="py-20 md:py-28 bg-[var(--bg-primary)]">
@@ -477,7 +477,7 @@ function LiveDemo() {
                 <TabsTrigger
                   key={t.value}
                   value={t.value}
-                  className="px-4 py-2 text-sm font-medium rounded-lg data-[state=active]:bg-[var(--accent-amber)] data-[state=active]:text-[#0A0F1A] data-[state=active]:shadow"
+                  className="px-4 py-2 text-sm font-medium rounded-lg data-[state=active]:bg-[var(--accent-amber)] data-[state=active]:text-[var(--brand-on-primary)] data-[state=active]:shadow"
                 >
                   {t.label}
                 </TabsTrigger>
@@ -497,7 +497,7 @@ function LiveDemo() {
                   className="absolute -inset-x-10 -inset-y-6 -z-10 rounded-3xl opacity-60 blur-3xl"
                   style={{
                     background:
-                      'linear-gradient(135deg, rgba(245,158,11,0.16), rgba(139,92,246,0.12))',
+                      'linear-gradient(135deg, rgba(5, 150, 105,0.16), rgba(139,92,246,0.12))',
                   }}
                 />
                 <div className="rounded-2xl border border-[var(--border-default)] bg-[var(--bg-primary)] overflow-hidden shadow-xl">
@@ -616,7 +616,7 @@ function Comparison() {
         <SectionHeader
           eyebrow="Comparison"
           eyebrowColor="amber"
-          title={<>Why Nigerian businesses choose <span className="text-gradient-amber">getranked.ng</span>.</>}
+          title={<>Why Nigerian businesses choose <span className="text-gradient-amber">getranked</span>.</>}
           sub="International tools were built for the US market. We were built for ours."
         />
 
@@ -625,10 +625,10 @@ function Comparison() {
             <div className="p-4 md:p-5 bg-[var(--bg-tertiary)] font-semibold text-[var(--text-muted)] uppercase tracking-wider text-[11px]">
               Feature
             </div>
-            <div className="p-4 md:p-5 bg-[rgba(245,158,11,0.08)] border-l border-[var(--border-default)]">
+            <div className="p-4 md:p-5 bg-[rgba(5, 150, 105,0.08)] border-l border-[var(--border-default)]">
               <div className="flex items-center gap-2">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--accent-amber)]">getranked.ng</span>
-                <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-[var(--accent-amber)] text-[#0A0F1A]">NG</span>
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--accent-amber)]">getranked</span>
+                <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-[var(--accent-amber)] text-[var(--brand-on-primary)]">NG</span>
               </div>
             </div>
             <div className="p-4 md:p-5 bg-[var(--bg-tertiary)] border-l border-[var(--border-default)] text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
@@ -640,7 +640,7 @@ function Comparison() {
                 <div className="p-4 md:p-5 border-t border-[var(--border-default)] text-[var(--text-secondary)]">
                   {row.label}
                 </div>
-                <div className="p-4 md:p-5 border-t border-l border-[var(--border-default)] bg-[rgba(245,158,11,0.04)]">
+                <div className="p-4 md:p-5 border-t border-l border-[var(--border-default)] bg-[rgba(5, 150, 105,0.04)]">
                   {typeof row.us === 'boolean' ? (
                     row.us ? (
                       <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--accent-green)]/15">
@@ -747,7 +747,7 @@ function PricingTeaser() {
             >
               {p.featured && (
                 <div className="absolute -top-3 left-6">
-                  <span className="px-3 py-1 rounded-full bg-[var(--accent-amber)] text-[#0A0F1A] text-[11px] font-bold tracking-wider uppercase">
+                  <span className="px-3 py-1 rounded-full bg-[var(--accent-amber)] text-[var(--brand-on-primary)] text-[11px] font-bold tracking-wider uppercase">
                     Most popular
                   </span>
                 </div>
@@ -823,7 +823,7 @@ function Testimonials() {
         <SectionHeader
           eyebrow="Loved by Nigerian SMEs"
           eyebrowColor="purple"
-          title={<>200+ Nigerian businesses trust <span className="text-gradient-amber">getranked.ng</span>.</>}
+          title={<>200+ Nigerian businesses trust <span className="text-gradient-amber">getranked</span>.</>}
           sub="From Lekki to Abuja, we help SMEs become the answer when Nigerians search."
         />
         <div className="grid md:grid-cols-3 gap-4 md:gap-6">
@@ -872,7 +872,7 @@ const FAQS = [
   },
   {
     q: 'How is this different from Ahrefs or SEMrush?',
-    a: 'International tools were built for the US market. They track Google but ignore AI engines, charge in USD (₦1,500/$ kills budgets) and have no Nigerian local SEO data. We built getranked.ng for our market from day one.',
+    a: 'International tools were built for the US market. They track Google but ignore AI engines, charge in USD (₦1,500/$ kills budgets) and have no Nigerian local SEO data. We built getranked for our market from day one.',
   },
   {
     q: 'Can I pay with my Nigerian bank card?',
@@ -908,7 +908,7 @@ function FAQ() {
               <AccordionTrigger className="text-left text-[var(--text-primary)] hover:no-underline py-5 [&>svg]:hidden group">
                 <span className="flex items-center justify-between w-full gap-4">
                   <span className="font-jakarta font-semibold text-base">{f.q}</span>
-                  <span className="shrink-0 w-8 h-8 rounded-full border border-[var(--border-default)] flex items-center justify-center text-[var(--text-secondary)] group-data-[state=open]:bg-[var(--accent-amber)] group-data-[state=open]:text-[#0A0F1A] group-data-[state=open]:border-[var(--accent-amber)] transition-colors">
+                  <span className="shrink-0 w-8 h-8 rounded-full border border-[var(--border-default)] flex items-center justify-center text-[var(--text-secondary)] group-data-[state=open]:bg-[var(--accent-amber)] group-data-[state=open]:text-[var(--brand-on-primary)] group-data-[state=open]:border-[var(--accent-amber)] transition-colors">
                     <Plus className="w-4 h-4 group-data-[state=open]:hidden" />
                     <Minus className="w-4 h-4 hidden group-data-[state=open]:block" />
                   </span>
@@ -933,7 +933,7 @@ function FinalCTA() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            'radial-gradient(50% 60% at 50% 50%, rgba(245,158,11,0.18) 0%, transparent 60%), radial-gradient(40% 50% at 80% 80%, rgba(139,92,246,0.12) 0%, transparent 70%), radial-gradient(40% 50% at 20% 20%, rgba(20,184,166,0.10) 0%, transparent 70%)',
+            'radial-gradient(50% 60% at 50% 50%, rgba(5, 150, 105,0.18) 0%, transparent 60%), radial-gradient(40% 50% at 80% 80%, rgba(139,92,246,0.12) 0%, transparent 70%), radial-gradient(40% 50% at 20% 20%, rgba(20,184,166,0.10) 0%, transparent 70%)',
         }}
       />
       <div
@@ -985,7 +985,7 @@ export default function Home() {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    document.title = "getranked.ng - Nigeria's #1 SEO + GEO Platform"
+    document.title = "getranked - Nigeria's #1 SEO + GEO Platform"
     setMounted(true)
   }, [])
 

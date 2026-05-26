@@ -298,7 +298,7 @@ export default function SchemaGenerator() {
   const [copied, setCopied] = useState<'json' | 'script' | null>(null)
 
   useEffect(() => {
-    document.title = 'Schema Markup Generator — getranked.ng'
+    document.title = 'Schema Markup Generator — getranked'
   }, [])
 
   const schema = useMemo(() => {
@@ -388,7 +388,7 @@ export default function SchemaGenerator() {
         aria-hidden="true"
       />
       <div
-        className="absolute rounded-full blur-[120px] pointer-events-none w-[400px] h-[400px] bg-amber-500/10 top-[40%] -left-48"
+        className="absolute rounded-full blur-[120px] pointer-events-none w-[400px] h-[400px] bg-emerald-500/10 top-[40%] -left-48"
         aria-hidden="true"
       />
 
@@ -515,7 +515,7 @@ export default function SchemaGenerator() {
                     <button
                       type="button"
                       onClick={() => copy('json')}
-                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[var(--accent-amber)] text-[#0A0F1A] font-jakarta font-semibold text-sm transition-all duration-200 hover:bg-[var(--accent-amber-hover)] hover:scale-[1.02] active:scale-[0.98]"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[var(--accent-amber)] text-[var(--brand-on-primary)] font-jakarta font-semibold text-sm transition-all duration-200 hover:bg-[var(--accent-amber-hover)] hover:scale-[1.02] active:scale-[0.98]"
                       aria-label="Copy JSON-LD to clipboard"
                     >
                       {copied === 'json' ? (
@@ -573,7 +573,7 @@ export default function SchemaGenerator() {
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1.5">
                           <span className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
-                          <span className="w-2.5 h-2.5 rounded-full bg-amber-500/70" />
+                          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/70" />
                           <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/70" />
                         </div>
                         <span className="text-xs font-mono text-white/60 ml-2">
@@ -624,7 +624,7 @@ function TabTrigger({
   return (
     <TabsTrigger
       value={value}
-      className="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm font-medium text-[var(--text-secondary)] data-[state=active]:bg-[var(--accent-amber)] data-[state=active]:text-[#0A0F1A] data-[state=active]:shadow-sm transition-all"
+      className="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm font-medium text-[var(--text-secondary)] data-[state=active]:bg-[var(--accent-amber)] data-[state=active]:text-[var(--brand-on-primary)] data-[state=active]:shadow-sm transition-all"
     >
       <Icon className="w-4 h-4" />
       <span className="truncate">{label}</span>
@@ -633,7 +633,7 @@ function TabTrigger({
 }
 
 const fieldCls =
-  'w-full px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/50 hover:border-[var(--border-hover)]'
+  'w-full px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-default)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/50 hover:border-[var(--border-hover)]'
 
 function FieldLabel({ children, hint }: { children: React.ReactNode; hint?: string }) {
   return (
@@ -770,7 +770,7 @@ function LocalBusinessFields({
                 aria-label={`Toggle ${d.label}`}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
                   active
-                    ? 'bg-amber-500/15 border-amber-500/40 text-[var(--accent-amber)]'
+                    ? 'bg-emerald-500/15 border-emerald-500/40 text-[var(--accent-amber)]'
                     : 'bg-[var(--bg-secondary)] border-[var(--border-default)] text-[var(--text-secondary)] hover:border-[var(--border-hover)]'
                 }`}
               >
@@ -995,7 +995,7 @@ function OrganizationFields({
             onClick={() =>
               u('sameAs', [...value.sameAs, { id: rid(), value: '' }])
             }
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/15 text-[var(--accent-amber)] text-xs font-semibold transition-colors hover:bg-amber-500/25"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/15 text-[var(--accent-amber)] text-xs font-semibold transition-colors hover:bg-emerald-500/25"
             aria-label="Add a social profile URL"
           >
             <Plus className="w-3.5 h-3.5" />
@@ -1070,7 +1070,7 @@ function FaqFields({
                 items: [...value.items, { id: rid(), question: '', answer: '' }],
               })
             }
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/15 text-[var(--accent-amber)] text-xs font-semibold transition-colors hover:bg-amber-500/25"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/15 text-[var(--accent-amber)] text-xs font-semibold transition-colors hover:bg-emerald-500/25"
             aria-label="Add an FAQ item"
           >
             <Plus className="w-3.5 h-3.5" />
@@ -1336,7 +1336,7 @@ function Section({
 }) {
   return (
     <div className="flex items-center gap-3 pb-2">
-      <div className="w-9 h-9 rounded-lg bg-amber-500/15 flex items-center justify-center">
+      <div className="w-9 h-9 rounded-lg bg-emerald-500/15 flex items-center justify-center">
         <Icon className="w-4 h-4 text-[var(--accent-amber)]" />
       </div>
       <div>
@@ -1353,7 +1353,7 @@ function highlightJson(json: string) {
     if (!tok) return null
     if (/^"(?:\\.|[^"\\])*"\s*:$/.test(tok)) {
       return (
-        <span key={i} className="text-amber-300">
+        <span key={i} className="text-emerald-300">
           {tok}
         </span>
       )

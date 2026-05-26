@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Sun, Moon, Menu, X, ChevronDown } from 'lucide-react'
 import { useTheme } from '@/context/ThemeContext'
+import Wordmark from '@/components/Wordmark'
 
 const toolsDropdown = [
   { label: 'GEO Audit', href: '/geo-audit' },
@@ -60,11 +61,9 @@ export default function Navbar() {
       style={{ height: '64px' }}
     >
       <div className="container-main h-full flex items-center justify-between">
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 shrink-0" onClick={handleLinkClick}>
-          <img src="/logo-icon.svg" alt="" className="w-8 h-8" />
-          <img src="/logo.svg" alt="getranked.ng" className="h-6 hidden sm:block" />
-        </Link>
+        <div onClick={handleLinkClick} className="shrink-0 text-[var(--text-primary)]">
+          <Wordmark size="md" />
+        </div>
 
         {/* Desktop Nav Links */}
         <div className="hidden lg:flex items-center gap-1">
@@ -162,7 +161,7 @@ export default function Navbar() {
           </Link>
           <Link
             to="/register"
-            className="hidden sm:inline-flex items-center justify-center px-5 py-2 rounded-[10px] text-sm font-semibold bg-[var(--accent-amber)] text-[#0A0F1A] hover:bg-[var(--accent-amber-hover)] transition-all hover:scale-[1.03] active:scale-[0.97]"
+            className="hidden sm:inline-flex items-center justify-center px-5 py-2 rounded-[10px] text-sm font-semibold bg-[var(--accent-amber)] text-[var(--brand-on-primary)] hover:bg-[var(--accent-amber-hover)] transition-all hover:scale-[1.03] active:scale-[0.97]"
           >
             Get Started
           </Link>
@@ -243,7 +242,7 @@ export default function Navbar() {
             </Link>
             <Link
               to="/register"
-              className="mx-4 py-3 text-center text-base font-semibold bg-[var(--accent-amber)] text-[#0A0F1A] rounded-xl hover:bg-[var(--accent-amber-hover)] transition-colors"
+              className="mx-4 py-3 text-center text-base font-semibold bg-[var(--accent-amber)] text-[var(--brand-on-primary)] rounded-xl hover:bg-[var(--accent-amber-hover)] transition-colors"
               onClick={handleLinkClick}
             >
               Get Started

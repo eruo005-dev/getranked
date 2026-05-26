@@ -46,7 +46,7 @@ const HOW_IT_WORKS = [
     icon: Target,
     title: 'Add competitors',
     desc: 'Drop in up to 10 rival websites. We auto-discover their key SEO + GEO keywords.',
-    accent: 'var(--accent-amber)', rgb: '245,158,11',
+    accent: 'var(--accent-amber)', rgb: '5, 150, 105',
   },
   {
     icon: Eye,
@@ -101,7 +101,7 @@ function ChartTooltip({ active, payload, label }: { active?: boolean; payload?: 
 
 export default function CompetitorMonitor() {
   useEffect(() => {
-    document.title = 'Competitor Monitor — getranked.ng'
+    document.title = 'Competitor Monitor — getranked'
   }, [])
 
   return (
@@ -143,7 +143,7 @@ export default function CompetitorMonitor() {
             {/* glow */}
             <div
               className="absolute -top-32 -right-32 w-96 h-96 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.10) 0%, transparent 70%)', filter: 'blur(60px)' }}
+              style={{ background: 'radial-gradient(circle, rgba(5, 150, 105,0.10) 0%, transparent 70%)', filter: 'blur(60px)' }}
             />
             <div className="flex flex-wrap items-start justify-between gap-4 mb-6 relative">
               <div>
@@ -269,7 +269,7 @@ export default function CompetitorMonitor() {
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <motion.div {...fadeUpProps} custom={0}>
-              <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4 border border-[rgba(245,158,11,0.2)] bg-[rgba(245,158,11,0.1)] text-[var(--accent-amber)] text-label">
+              <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4 border border-[rgba(5, 150, 105,0.2)] bg-[rgba(5, 150, 105,0.1)] text-[var(--accent-amber)] text-label">
                 WHAT YOU GET
               </span>
               <h2 className="text-heading-1 text-[var(--text-primary)] mb-4">
@@ -317,7 +317,7 @@ export default function CompetitorMonitor() {
               <h3 className="text-heading-3 text-[var(--text-primary)] mb-2">Sample WhatsApp alert</h3>
               <p className="text-sm text-[var(--text-secondary)] mb-3">You get a message like this the moment a rival overtakes you:</p>
               <div className="rounded-2xl bg-[var(--bg-tertiary)] border border-[var(--border-default)] p-4 text-sm font-mono text-[var(--text-primary)] leading-relaxed">
-                <div className="text-[var(--accent-green)] mb-1">getranked.ng • now</div>
+                <div className="text-[var(--accent-green)] mb-1">getranked • now</div>
                 Heads up — Kuda just got mentioned by ChatGPT for &quot;best Nigerian neobank for SMEs&quot;. They overtook you by 4 mentions this week. Tap to see the prompt and our 3 recommended fixes.
               </div>
             </div>

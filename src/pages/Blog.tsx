@@ -168,7 +168,7 @@ export default function Blog() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 border ${
                   activeCategory === cat
-                    ? 'bg-[var(--accent-amber)] text-[#0A0F1A] border-[var(--accent-amber)] shadow-sm'
+                    ? 'bg-[var(--accent-amber)] text-[var(--brand-on-primary)] border-[var(--accent-amber)] shadow-sm'
                     : 'bg-[var(--bg-secondary)] text-[var(--text-secondary)] border-[var(--border-default)] hover:border-[var(--accent-amber)]/50 hover:text-[var(--text-primary)]'
                 }`}
               >
@@ -299,7 +299,7 @@ export default function Blog() {
                 />
                 <Button
                   type="submit"
-                  className="h-12 px-6 bg-[var(--accent-amber)] hover:bg-[var(--accent-amber-hover)] text-[#0A0F1A] font-semibold whitespace-nowrap"
+                  className="h-12 px-6 bg-[var(--accent-amber)] hover:bg-[var(--accent-amber-hover)] text-[var(--brand-on-primary)] font-semibold whitespace-nowrap"
                 >
                   Subscribe
                   <ArrowRight className="w-4 h-4 ml-1" />

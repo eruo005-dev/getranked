@@ -54,12 +54,19 @@ module.exports = {
           ring: "hsl(var(--sidebar-ring))",
         },
         amber: {
-          DEFAULT: '#F59E0B',
-          hover: '#D97706',
-          glow: 'rgba(245, 158, 11, 0.25)',
+          DEFAULT: '#059669',
+          hover: '#047857',
+          glow: 'rgba(5, 150, 105, 0.25)',
         },
-        teal: '#14B8A6',
-        purple: '#8B5CF6',
+        brand: {
+          DEFAULT: '#059669',
+          hover: '#047857',
+          light: '#10B981',
+          deep: '#064E3B',
+          glow: 'rgba(5, 150, 105, 0.25)',
+        },
+        teal: '#0D9488',
+        purple: '#7C3AED',
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
@@ -70,8 +77,8 @@ module.exports = {
       },
       boxShadow: {
         xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
-        glow: "0 0 24px rgba(245, 158, 11, 0.25)",
-        'glow-lg': "0 0 40px rgba(245, 158, 11, 0.25)",
+        glow: "0 0 24px rgba(5, 150, 105, 0.3)",
+        'glow-lg': "0 0 40px rgba(5, 150, 105, 0.3)",
         card: "0 8px 32px rgba(0,0,0,0.3)",
         whatsapp: "0 4px 16px rgba(37, 211, 102, 0.4)",
       },
@@ -97,8 +104,8 @@ module.exports = {
           "100%": { transform: "translateX(0)" },
         },
         "glow-pulse": {
-          "0%, 100%": { boxShadow: "0 0 20px rgba(245, 158, 11, 0.15)" },
-          "50%": { boxShadow: "0 0 40px rgba(245, 158, 11, 0.35)" },
+          "0%, 100%": { boxShadow: "0 0 20px rgba(5, 150, 105, 0.18)" },
+          "50%": { boxShadow: "0 0 40px rgba(16, 185, 129, 0.4)" },
         },
         "whatsapp-pulse": {
           "0%": { boxShadow: "0 0 0 0 rgba(37, 211, 102, 0.4)" },

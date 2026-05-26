@@ -79,8 +79,8 @@ const llmTableData = [
 ]
 
 const activities = [
-  { icon: Zap, title: 'GEO Audit Completed', desc: 'Full site analysis finished — score improved to 78', time: '2 hours ago', color: 'text-amber-500', bg: 'bg-amber-500/10' },
-  { icon: Bot, title: 'New LLM Mention', desc: 'ChatGPT mentioned getranked.ng for "SEO agency Lagos"', time: '5 hours ago', color: 'text-purple-500', bg: 'bg-purple-500/10' },
+  { icon: Zap, title: 'GEO Audit Completed', desc: 'Full site analysis finished — score improved to 78', time: '2 hours ago', color: 'text-emerald-500', bg: 'bg-emerald-500/10' },
+  { icon: Bot, title: 'New LLM Mention', desc: 'ChatGPT mentioned getranked for "SEO agency Lagos"', time: '5 hours ago', color: 'text-purple-500', bg: 'bg-purple-500/10' },
   { icon: TrendingUp, title: 'Keyword Ranked #3', desc: '"best SEO agency Nigeria" moved from #8 to #3', time: '1 day ago', color: 'text-teal-500', bg: 'bg-teal-500/10' },
   { icon: Globe, title: 'Competitor Alert', desc: 'Competitor X published 3 new GEO-optimized pages', time: '1 day ago', color: 'text-blue-500', bg: 'bg-blue-500/10' },
   { icon: FileText, title: 'Report Generated', desc: 'Weekly GEO performance report is ready for download', time: '2 days ago', color: 'text-emerald-500', bg: 'bg-emerald-500/10' },
@@ -173,7 +173,7 @@ function StatusBadge({ status }: { status: string }) {
     )
   }
   return (
-    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-500 border border-amber-500/20">
+    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
       <AlertCircle size={12} /> Partial
     </span>
   )
@@ -268,11 +268,11 @@ export default function Dashboard() {
           <Link to="/" className="flex items-center gap-2.5">
             <div className="relative">
               <div className="w-7 h-7 rounded-lg bg-[var(--accent-amber)] flex items-center justify-center">
-                <BarChart3 size={16} className="text-[#0A0F1A]" />
+                <BarChart3 size={16} className="text-[var(--brand-on-primary)]" />
               </div>
               <div className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-[var(--accent-amber)] border-2 border-[var(--bg-secondary)]" />
             </div>
-            <span className="font-outfit font-bold text-lg text-[var(--text-primary)]">getranked.ng</span>
+            <span className="font-outfit font-bold text-lg text-[var(--text-primary)]">getranked</span>
           </Link>
         </div>
 
@@ -398,7 +398,7 @@ export default function Dashboard() {
                 onClick={() => setProfileOpen(!profileOpen)}
                 className="flex items-center gap-2.5 pl-1 pr-2 py-1 rounded-xl hover:bg-[var(--bg-tertiary)] transition-colors"
               >
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[var(--accent-amber)] to-[#D4A843] flex items-center justify-center text-sm font-bold text-[#0A0F1A]">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[var(--accent-amber)] to-[#D4A843] flex items-center justify-center text-sm font-bold text-[var(--brand-on-primary)]">
                   A
                 </div>
                 <div className="hidden md:block text-left">
@@ -555,7 +555,7 @@ export default function Dashboard() {
                     onClick={() => setTimeRange(r)}
                     className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-200 ${
                       timeRange === r
-                        ? 'bg-[var(--accent-amber)] text-[#0A0F1A] shadow-glow'
+                        ? 'bg-[var(--accent-amber)] text-[var(--brand-on-primary)] shadow-glow'
                         : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
                     }`}
                   >
@@ -733,7 +733,7 @@ export default function Dashboard() {
                     onClick={() => setCurrentPage(p)}
                     className={`w-8 h-8 rounded-lg text-xs font-semibold transition-colors ${
                       currentPage === p
-                        ? 'bg-[var(--accent-amber)] text-[#0A0F1A]'
+                        ? 'bg-[var(--accent-amber)] text-[var(--brand-on-primary)]'
                         : 'text-[var(--text-secondary)] hover:bg-[var(--bg-tertiary)]'
                     }`}
                   >
@@ -799,7 +799,7 @@ export default function Dashboard() {
               <h3 className="text-heading-3 text-[var(--text-primary)] mb-6">Quick Actions</h3>
               <div className="space-y-3">
                 {[
-                  { icon: Zap, title: 'Run GEO Audit', desc: 'Analyze your site for generative engine optimization', href: '/geo-audit', color: 'text-amber-500', bg: 'bg-amber-500/10', border: 'border-amber-500/20', hoverBg: 'hover:bg-amber-500/15' },
+                  { icon: Zap, title: 'Run GEO Audit', desc: 'Analyze your site for generative engine optimization', href: '/geo-audit', color: 'text-emerald-500', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20', hoverBg: 'hover:bg-emerald-500/15' },
                   { icon: FileText, title: 'Generate Report', desc: 'Create a comprehensive performance report', href: '/reporting', color: 'text-blue-500', bg: 'bg-blue-500/10', border: 'border-blue-500/20', hoverBg: 'hover:bg-blue-500/15' },
                   { icon: Plus, title: 'Add Competitor', desc: 'Track a new competitor for comparison', href: '/tools/competitor', color: 'text-purple-500', bg: 'bg-purple-500/10', border: 'border-purple-500/20', hoverBg: 'hover:bg-purple-500/15' },
                 ].map((action, i) => (

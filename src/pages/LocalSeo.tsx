@@ -54,7 +54,7 @@ export default function LocalSeo() {
   const [activeCategory, setActiveCategory] = useState<string>('real-estate')
 
   useEffect(() => {
-    document.title = 'Nigerian Local SEO — getranked.ng'
+    document.title = 'Nigerian Local SEO — getranked'
   }, [])
 
   const activeCat = CATEGORIES.find((c) => c.slug === activeCategory) ?? CATEGORIES[0]
@@ -113,7 +113,7 @@ export default function LocalSeo() {
                   onClick={() => setActiveCategory(cat.slug)}
                   className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all border ${
                     active
-                      ? 'bg-[var(--accent-amber)] text-[#0A0F1A] border-[var(--accent-amber)] shadow-glow'
+                      ? 'bg-[var(--accent-amber)] text-[var(--brand-on-primary)] border-[var(--accent-amber)] shadow-glow'
                       : 'bg-[var(--bg-secondary)] text-[var(--text-secondary)] border-[var(--border-default)] hover:border-[var(--accent-amber)] hover:text-[var(--accent-amber)]'
                   }`}
                 >
@@ -134,7 +134,7 @@ export default function LocalSeo() {
                 >
                   <div
                     className="absolute -top-16 -right-16 w-48 h-48 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                    style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.15) 0%, transparent 70%)', filter: 'blur(40px)' }}
+                    style={{ background: 'radial-gradient(circle, rgba(5, 150, 105,0.15) 0%, transparent 70%)', filter: 'blur(40px)' }}
                   />
                   <div className="flex items-start justify-between mb-4 relative">
                     <div className="w-11 h-11 rounded-xl bg-[var(--accent-green)]/10 flex items-center justify-center">
@@ -225,7 +225,7 @@ export default function LocalSeo() {
               </div>
               <div
                 className="absolute -inset-4 rounded-3xl opacity-30 blur-2xl -z-10"
-                style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.25), rgba(20,184,166,0.2))' }}
+                style={{ background: 'linear-gradient(135deg, rgba(5, 150, 105,0.25), rgba(20,184,166,0.2))' }}
               />
             </motion.div>
           </div>
@@ -261,7 +261,7 @@ export default function LocalSeo() {
 
             <motion.div {...fadeUpProps} custom={1}>
               <div className="card-base p-1 overflow-hidden relative">
-                <div className="rounded-xl bg-[#0A0F1A] p-5 overflow-x-auto">
+                <div className="rounded-xl bg-[var(--accent-green-deep)] p-5 overflow-x-auto">
                   <div className="flex items-center gap-1.5 mb-3">
                     <span className="w-3 h-3 rounded-full bg-[var(--accent-red)]" />
                     <span className="w-3 h-3 rounded-full bg-[var(--accent-amber)]" />
@@ -311,7 +311,7 @@ export default function LocalSeo() {
           >
             <div
               className="absolute -top-20 -left-20 w-72 h-72 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 70%)', filter: 'blur(60px)' }}
+              style={{ background: 'radial-gradient(circle, rgba(5, 150, 105,0.12) 0%, transparent 70%)', filter: 'blur(60px)' }}
             />
             <div className="w-14 h-14 rounded-2xl bg-[var(--accent-amber)]/10 flex items-center justify-center shrink-0 relative">
               <Sparkles className="w-6 h-6 text-[var(--accent-amber)]" />

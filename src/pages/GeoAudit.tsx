@@ -168,7 +168,7 @@ export default function GeoAudit() {
 
   const getScoreColor = (score: number) => {
     if (score >= 70) return '#10B981'
-    if (score >= 50) return '#F59E0B'
+    if (score >= 50) return '#059669'
     return '#EF4444'
   }
 
@@ -176,7 +176,7 @@ export default function GeoAudit() {
     <div className="relative overflow-hidden">
       {/* ─── Ambient Glow Orbs ─── */}
       <GlowOrb className="w-[500px] h-[500px] bg-purple-500/10 -top-48 -left-48" />
-      <GlowOrb className="w-[400px] h-[400px] bg-amber-500/10 top-[30%] -right-48" />
+      <GlowOrb className="w-[400px] h-[400px] bg-emerald-500/10 top-[30%] -right-48" />
       <GlowOrb className="w-[300px] h-[300px] bg-teal-500/8 top-[60%] -left-24" />
 
       {/* ═══════════ HERO ═══════════ */}
@@ -459,7 +459,7 @@ export default function GeoAudit() {
               {/* Stats Row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
                 {[
-                  { label: 'Total Mentions', value: result.mentionCount.toLocaleString(), icon: MessageSquare, color: 'text-amber-500', bg: 'bg-amber-500/10' },
+                  { label: 'Total Mentions', value: result.mentionCount.toLocaleString(), icon: MessageSquare, color: 'text-emerald-500', bg: 'bg-emerald-500/10' },
                   { label: 'Competitor Gap', value: `-${result.competitorGap}%`, icon: TrendingUp, color: 'text-red-500', bg: 'bg-red-500/10' },
                   { label: 'Platforms Found', value: '12', icon: Globe, color: 'text-teal-500', bg: 'bg-teal-500/10' },
                   { label: 'Action Items', value: `${result.recommendations.length}`, icon: CheckCircle2, color: 'text-emerald-500', bg: 'bg-emerald-500/10' },
@@ -490,7 +490,7 @@ export default function GeoAudit() {
                   className="glass-panel p-6"
                 >
                   <div className="flex items-center gap-2 mb-5">
-                    <Zap className="w-5 h-5 text-amber-500" />
+                    <Zap className="w-5 h-5 text-emerald-500" />
                     <h3 className="text-heading-3 text-[var(--text-primary)]">Recommendations</h3>
                   </div>
                   <ul className="space-y-3">
@@ -502,8 +502,8 @@ export default function GeoAudit() {
                         transition={{ delay: 0.7 + i * 0.08 }}
                         className="flex items-start gap-3"
                       >
-                        <span className="w-6 h-6 rounded-full bg-amber-500/15 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <span className="text-xs font-bold text-amber-500">{i + 1}</span>
+                        <span className="w-6 h-6 rounded-full bg-emerald-500/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <span className="text-xs font-bold text-emerald-500">{i + 1}</span>
                         </span>
                         <span className="text-sm text-[var(--text-secondary)]">{rec}</span>
                       </motion.li>
@@ -548,7 +548,7 @@ export default function GeoAudit() {
                             className={`h-full rounded-full ${
                               mention.sentiment === 'positive' ? 'bg-emerald-500' :
                               mention.sentiment === 'negative' ? 'bg-red-500' :
-                              'bg-amber-500'
+                              'bg-emerald-500'
                             }`}
                             initial={{ width: 0 }}
                             animate={{ width: `${(mention.count / 250) * 100}%` }}
@@ -646,8 +646,8 @@ export default function GeoAudit() {
                   icon: Search,
                   title: 'We Scan AI Platforms',
                   description: 'Our engine scans ChatGPT, Google SGE, Perplexity, Bing Copilot, and 10+ other AI platforms.',
-                  color: 'text-amber-500',
-                  bg: 'bg-amber-500/10',
+                  color: 'text-emerald-500',
+                  bg: 'bg-emerald-500/10',
                 },
                 {
                   step: '03',
@@ -698,7 +698,7 @@ export default function GeoAudit() {
                 ].map((item, i) => (
                   <div key={i} className="flex flex-col items-center">
                     <div className="w-12 h-12 rounded-xl bg-[var(--bg-tertiary)] flex items-center justify-center mb-3">
-                      <item.icon className="w-5 h-5 text-amber-500" />
+                      <item.icon className="w-5 h-5 text-emerald-500" />
                     </div>
                     <h4 className="text-sm font-semibold text-[var(--text-primary)] mb-1">{item.label}</h4>
                     <p className="text-xs text-[var(--text-muted)] max-w-[200px]">{item.desc}</p>

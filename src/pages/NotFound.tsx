@@ -21,7 +21,7 @@ const quickLinks = [
     title: 'Home',
     body: 'Start at the front door. Meet the platform built in Lagos.',
     color: 'var(--accent-amber)',
-    tint: 'rgba(245,158,11,0.12)',
+    tint: 'rgba(5, 150, 105,0.12)',
   },
   {
     to: '/geo-audit',
@@ -47,7 +47,7 @@ export default function NotFound() {
     document.title = '404 — Page not found'
     const meta = document.querySelector('meta[name="description"]')
     const description =
-      "We couldn't find that page on getranked.ng. Try the free GEO audit, the pricing page, or head back home."
+      "We couldn't find that page on getranked. Try the free GEO audit, the pricing page, or head back home."
     if (meta) {
       meta.setAttribute('content', description)
     } else {
@@ -69,7 +69,7 @@ export default function NotFound() {
           transform: 'translateX(-50%)',
           width: '900px',
           height: '700px',
-          background: 'radial-gradient(circle, rgba(245,158,11,0.14) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(5, 150, 105,0.14) 0%, transparent 70%)',
           filter: 'blur(90px)',
         }}
       />
@@ -88,7 +88,7 @@ export default function NotFound() {
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(245,158,11,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(245,158,11,0.4) 1px, transparent 1px)',
+            'linear-gradient(rgba(5, 150, 105,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(5, 150, 105,0.4) 1px, transparent 1px)',
           backgroundSize: '64px 64px',
         }}
       />
@@ -114,7 +114,7 @@ export default function NotFound() {
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 3.6, repeat: Infinity, ease: 'easeInOut', delay: 0.4 }}
               className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-[var(--bg-secondary)] border-2 border-[var(--accent-amber)] flex items-center justify-center"
-              style={{ boxShadow: '0 0 32px rgba(245,158,11,0.25)' }}
+              style={{ boxShadow: '0 0 32px rgba(5, 150, 105,0.25)' }}
             >
               <MapPin className="w-6 h-6 md:w-7 md:h-7 text-[var(--accent-amber)]" />
             </motion.div>

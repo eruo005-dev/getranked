@@ -61,7 +61,7 @@ const contactMethods = [
     value: 'Chat with our team',
     detail: '+234 801 234 5678',
     cta: 'Open WhatsApp',
-    href: 'https://wa.me/2348012345678?text=Hi%20getranked.ng',
+    href: 'https://wa.me/2348012345678?text=Hi%20getranked',
     external: true,
     accent: 'text-[var(--accent-green)]',
     bgAccent: 'bg-[var(--accent-green)]/10',
@@ -179,7 +179,7 @@ export default function Contact() {
   const [submitting, setSubmitting] = useState(false)
 
   useEffect(() => {
-    document.title = 'Contact — getranked.ng'
+    document.title = 'Contact — getranked'
   }, [])
 
   const form = useForm<ContactFormValues>({
@@ -396,7 +396,7 @@ export default function Contact() {
                           </FormLabel>
                           <FormControl>
                             <Input
-                              placeholder="getranked.ng"
+                              placeholder="getranked"
                               autoComplete="organization"
                               {...field}
                             />
@@ -503,7 +503,7 @@ export default function Contact() {
                           </FormControl>
                           <div className="grid gap-1.5 leading-none">
                             <FormLabel className="text-body-sm text-[var(--text-secondary)] font-normal cursor-pointer">
-                              I agree to be contacted by getranked.ng and accept
+                              I agree to be contacted by getranked and accept
                               the{' '}
                               <Link
                                 to="/terms"
@@ -572,7 +572,7 @@ export default function Contact() {
 
                 <div className="space-y-3">
                   <a
-                    href="https://wa.me/2348012345678?text=Hi%20getranked.ng"
+                    href="https://wa.me/2348012345678?text=Hi%20getranked"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary w-full"
@@ -753,7 +753,7 @@ export default function Contact() {
                 Run free GEO audit
               </Link>
               <a
-                href="https://wa.me/2348012345678?text=Hi%20getranked.ng"
+                href="https://wa.me/2348012345678?text=Hi%20getranked"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"

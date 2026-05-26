@@ -46,7 +46,7 @@ const FEATURES: Feature[] = [
     image: '/feature-seo-dashboard.png',
     to: '/geo-audit',
     accent: 'var(--accent-amber)',
-    accentRgb: '245,158,11',
+    accentRgb: '5, 150, 105',
   },
   {
     icon: BarChart3,
@@ -102,7 +102,7 @@ const FEATURES: Feature[] = [
     image: '/feature-reporting.png',
     to: '/reporting',
     accent: 'var(--accent-amber)',
-    accentRgb: '245,158,11',
+    accentRgb: '5, 150, 105',
   },
   {
     icon: MessageCircle,
@@ -167,7 +167,7 @@ function ComparisonCell({ value }: { value: boolean | string }) {
 
 export default function Features() {
   useEffect(() => {
-    document.title = 'Platform Features — getranked.ng'
+    document.title = 'Platform Features — getranked'
   }, [])
 
   return (
@@ -179,13 +179,13 @@ export default function Features() {
           style={{
             top: '-20%', left: '50%', transform: 'translateX(-50%)',
             width: '720px', height: '720px',
-            background: 'radial-gradient(circle, rgba(245,158,11,0.14) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(5, 150, 105,0.14) 0%, transparent 70%)',
             filter: 'blur(80px)',
           }}
         />
         <div className="container-main relative z-10 text-center">
           <motion.div {...fadeUpProps} custom={0}>
-            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(245,158,11,0.2)] bg-[rgba(245,158,11,0.1)] text-[var(--accent-amber)] text-label">
+            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(5, 150, 105,0.2)] bg-[rgba(5, 150, 105,0.1)] text-[var(--accent-amber)] text-label">
               PLATFORM FEATURES
             </span>
           </motion.div>
@@ -312,7 +312,7 @@ export default function Features() {
                     <th className="text-left text-sm font-semibold text-[var(--text-secondary)] py-5 px-6">Feature</th>
                     <th className="py-5 px-4 min-w-[120px]">
                       <div className="text-center">
-                        <div className="text-sm font-bold text-[var(--accent-amber)]">getranked.ng</div>
+                        <div className="text-sm font-bold text-[var(--accent-amber)]">getranked</div>
                         <div className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider mt-0.5">You are here</div>
                       </div>
                     </th>
@@ -336,7 +336,7 @@ export default function Features() {
                       }`}
                     >
                       <td className="py-4 px-6 text-sm text-[var(--text-primary)] font-medium">{row.label}</td>
-                      <td className="py-4 px-4 bg-[rgba(245,158,11,0.04)]"><ComparisonCell value={row.us} /></td>
+                      <td className="py-4 px-4 bg-[rgba(5, 150, 105,0.04)]"><ComparisonCell value={row.us} /></td>
                       <td className="py-4 px-4"><ComparisonCell value={row.ahrefs} /></td>
                       <td className="py-4 px-4"><ComparisonCell value={row.semrush} /></td>
                       <td className="py-4 px-4"><ComparisonCell value={row.omnius} /></td>
@@ -352,7 +352,7 @@ export default function Features() {
             <h3 className="text-heading-2 text-[var(--text-primary)] text-center mb-8">Common questions</h3>
             <Accordion type="single" collapsible className="space-y-3">
               {[
-                { q: 'Do I need technical knowledge to use the platform?', a: 'No. Every tool is built for non-technical founders. If you can use WhatsApp, you can use getranked.ng.' },
+                { q: 'Do I need technical knowledge to use the platform?', a: 'No. Every tool is built for non-technical founders. If you can use WhatsApp, you can use getranked.' },
                 { q: 'Can I cancel anytime?', a: 'Yes. No contracts. Cancel from your dashboard or via WhatsApp in one message.' },
                 { q: 'How is this different from Ahrefs or SEMrush?', a: 'Those tools were built before generative AI search. We track ChatGPT, Claude, Perplexity and Gemini natively — and price in Naira.' },
               ].map((item, i) => (
@@ -373,7 +373,7 @@ export default function Features() {
           style={{
             top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
             width: '800px', height: '400px',
-            background: 'radial-gradient(ellipse, rgba(245,158,11,0.12) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse, rgba(5, 150, 105,0.12) 0%, transparent 70%)',
             filter: 'blur(80px)',
           }}
         />

@@ -107,7 +107,7 @@ export default function Login() {
   const [testimonialIdx, setTestimonialIdx] = useState(0)
 
   useEffect(() => {
-    document.title = 'Sign in — getranked.ng'
+    document.title = 'Sign in — getranked'
   }, [])
 
   useEffect(() => {
@@ -132,7 +132,7 @@ export default function Login() {
 
   const onSubmit = async (_values: LoginFormValues) => {
     await new Promise((r) => setTimeout(r, 1200))
-    toast.success('Signed in!', { description: 'Welcome back to getranked.ng' })
+    toast.success('Signed in!', { description: 'Welcome back to getranked' })
     navigate('/dashboard')
   }
 
@@ -141,14 +141,14 @@ export default function Login() {
   return (
     <div className="relative min-h-[calc(100dvh-64px)] grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
       {/* Mobile-only top banner */}
-      <div className="lg:hidden relative bg-gradient-to-br from-[#0A0F1A] via-[#111827] to-[#1A2235] text-white px-6 py-6 overflow-hidden">
+      <div className="lg:hidden relative bg-gradient-to-br from-[#04140C] via-[#0A2018] to-[#102C22] text-white px-6 py-6 overflow-hidden">
         <div className="absolute inset-0 opacity-30 pointer-events-none" style={{
           backgroundImage:
-            'radial-gradient(circle at 20% 30%, rgba(245,158,11,0.35), transparent 50%), radial-gradient(circle at 80% 70%, rgba(20,184,166,0.25), transparent 50%)',
+            'radial-gradient(circle at 20% 30%, rgba(5, 150, 105,0.35), transparent 50%), radial-gradient(circle at 80% 70%, rgba(20,184,166,0.25), transparent 50%)',
         }} />
         <div className="relative flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-[var(--accent-amber)]" />
-          <span className="text-sm font-semibold tracking-tight">getranked.ng</span>
+          <span className="text-sm font-semibold tracking-tight">getranked</span>
           <span className="ml-auto text-xs text-white/60">Nigeria's #1 GEO platform</span>
         </div>
       </div>
@@ -257,7 +257,7 @@ export default function Login() {
                 id="remember"
                 checked={!!remember}
                 onCheckedChange={(c) => setValue('remember', c === true)}
-                className="border-[var(--border-default)] data-[state=checked]:bg-[var(--accent-amber)] data-[state=checked]:border-[var(--accent-amber)] data-[state=checked]:text-[#0A0F1A]"
+                className="border-[var(--border-default)] data-[state=checked]:bg-[var(--accent-amber)] data-[state=checked]:border-[var(--accent-amber)] data-[state=checked]:text-[var(--brand-on-primary)]"
               />
               <label
                 htmlFor="remember"
@@ -300,12 +300,12 @@ export default function Login() {
       </section>
 
       {/* RIGHT — Decorative panel (desktop only) */}
-      <aside className="hidden lg:flex relative overflow-hidden bg-[#0A0F1A] text-white">
+      <aside className="hidden lg:flex relative overflow-hidden bg-[var(--accent-green-deep)] text-white">
         <div
           className="absolute inset-0 opacity-80"
           style={{
             backgroundImage:
-              'radial-gradient(circle at 25% 20%, rgba(245,158,11,0.25), transparent 45%), radial-gradient(circle at 80% 80%, rgba(20,184,166,0.18), transparent 45%), radial-gradient(circle at 60% 30%, rgba(139,92,246,0.12), transparent 50%)',
+              'radial-gradient(circle at 25% 20%, rgba(5, 150, 105,0.25), transparent 45%), radial-gradient(circle at 80% 80%, rgba(20,184,166,0.18), transparent 45%), radial-gradient(circle at 60% 30%, rgba(139,92,246,0.12), transparent 50%)',
           }}
           aria-hidden="true"
         />

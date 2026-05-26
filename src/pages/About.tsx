@@ -35,7 +35,7 @@ const thesisCards = [
     title: 'Naira pricing & Paystack',
     body: 'Pay in Naira via Paystack, Flutterwave or Squad. No FX swings, no $5K/mo Omnius bills, no card declines on Stripe. Settlement is T+1 to a Nigerian bank account.',
     color: 'var(--accent-amber)',
-    tint: 'rgba(245,158,11,0.12)',
+    tint: 'rgba(5, 150, 105,0.12)',
   },
   {
     icon: MapPin,
@@ -58,7 +58,7 @@ const team = [
     img: '/team-avatar-1.png',
     name: 'Adewale Okafor',
     role: 'Founder & CEO',
-    bio: 'Ex-Andela engineer. Spent 2024 watching Nigerian brands disappear from ChatGPT answers. Built getranked.ng to fix it.',
+    bio: 'Ex-Andela engineer. Spent 2024 watching Nigerian brands disappear from ChatGPT answers. Built getranked to fix it.',
   },
   {
     img: '/team-avatar-2.png',
@@ -107,10 +107,10 @@ const backers = [
 
 export default function About() {
   useEffect(() => {
-    document.title = 'About — getranked.ng'
+    document.title = 'About — getranked'
     const meta = document.querySelector('meta[name="description"]')
     const description =
-      'getranked.ng is Nigeria\'s first SEO + GEO platform — built in Lagos to help Nigerian businesses rank on Google and get mentioned by ChatGPT, Claude, Perplexity and Gemini.'
+      'getranked is Nigeria\'s first SEO + GEO platform — built in Lagos to help Nigerian businesses rank on Google and get mentioned by ChatGPT, Claude, Perplexity and Gemini.'
     if (meta) {
       meta.setAttribute('content', description)
     } else {
@@ -124,7 +124,7 @@ export default function About() {
   const orgJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'getranked.ng',
+    name: 'getranked',
     url: 'https://getranked.ng',
     logo: 'https://getranked.ng/logo.svg',
     description:
@@ -154,7 +154,7 @@ export default function About() {
             transform: 'translateX(-50%)',
             width: '720px',
             height: '720px',
-            background: 'radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(5, 150, 105,0.12) 0%, transparent 70%)',
             filter: 'blur(80px)',
           }}
         />
@@ -173,14 +173,14 @@ export default function About() {
           className="absolute inset-0 opacity-[0.05] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(245,158,11,0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(245,158,11,0.25) 1px, transparent 1px)',
+              'linear-gradient(rgba(5, 150, 105,0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(5, 150, 105,0.25) 1px, transparent 1px)',
             backgroundSize: '64px 64px',
           }}
         />
 
         <div className="container-main relative z-10">
           <motion.div className="text-center max-w-[820px] mx-auto" {...fadeUpProps} custom={0}>
-            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(245,158,11,0.25)] bg-[rgba(245,158,11,0.08)] text-[var(--accent-amber)] text-label">
+            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(5, 150, 105,0.25)] bg-[rgba(5, 150, 105,0.08)] text-[var(--accent-amber)] text-label">
               <MapPin className="w-3.5 h-3.5" /> ABOUT GETRANKED.NG
             </span>
             <h1 className="text-display-1 text-[var(--text-primary)] mb-6">
@@ -188,7 +188,7 @@ export default function About() {
               <br className="hidden sm:block" /> for Africa.
             </h1>
             <p className="text-body-lg text-[var(--text-secondary)] max-w-[640px] mx-auto mb-10">
-              getranked.ng is the only platform built for Nigerian businesses to rank on Google
+              getranked is the only platform built for Nigerian businesses to rank on Google
               <em className="not-italic text-[var(--text-primary)]"> and</em> get recommended by ChatGPT,
               Claude, Perplexity and Gemini. We&apos;re here because nobody else was.
             </p>
@@ -223,7 +223,7 @@ export default function About() {
               Ahrefs doesn&apos;t know what a POS agent is. SEMrush can&apos;t parse a CAC number. Omnius charges
               $5,000 a month and won&apos;t take a Naira card. Meanwhile, 3 million Nigerians are quietly
               asking ChatGPT &ldquo;what&apos;s the best school in Lekki&rdquo; and getting answers that
-              don&apos;t mention your business. We built getranked.ng so that the next time an
+              don&apos;t mention your business. We built getranked so that the next time an
               AI answers a question about Nigeria, it answers with you.
             </p>
           </motion.div>
@@ -258,7 +258,7 @@ export default function About() {
       <section className="bg-[var(--bg-secondary)] py-16 md:py-24">
         <div className="container-main">
           <motion.div className="text-center mb-14 max-w-[680px] mx-auto" {...fadeUpProps} custom={0}>
-            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-5 border border-[rgba(245,158,11,0.2)] bg-[rgba(245,158,11,0.1)] text-[var(--accent-amber)] text-label">
+            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-5 border border-[rgba(5, 150, 105,0.2)] bg-[rgba(5, 150, 105,0.1)] text-[var(--accent-amber)] text-label">
               THE NIGERIA-FIRST THESIS
             </span>
             <h2 className="text-heading-1 text-[var(--text-primary)] mb-4">
@@ -320,7 +320,7 @@ export default function About() {
                 </p>
                 <p>
                   That was the gap. Zero Nigerian agencies were doing GEO. The closest equivalent
-                  charged $5,000 a month and didn&apos;t take Naira. Within ninety days, getranked.ng
+                  charged $5,000 a month and didn&apos;t take Naira. Within ninety days, getranked
                   was live, the first Nigerian businesses were onboarded, and the same Lekki developer
                   was being recommended by ChatGPT, Claude and Perplexity.
                 </p>
@@ -332,13 +332,13 @@ export default function About() {
                 className="absolute -inset-4 rounded-3xl opacity-50 blur-2xl pointer-events-none"
                 style={{
                   background:
-                    'linear-gradient(135deg, rgba(245,158,11,0.25), rgba(139,92,246,0.18))',
+                    'linear-gradient(135deg, rgba(5, 150, 105,0.25), rgba(139,92,246,0.18))',
                 }}
               />
               <div className="relative card-base p-3 rounded-3xl overflow-hidden">
                 <img
                   src="/team-avatar-1.png"
-                  alt="Adewale Okafor, founder of getranked.ng, in Lagos"
+                  alt="Adewale Okafor, founder of getranked, in Lagos"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                   loading="lazy"
                 />
@@ -387,7 +387,7 @@ export default function About() {
                 <div className="relative mb-5 overflow-hidden rounded-2xl bg-[var(--bg-tertiary)]">
                   <img
                     src={member.img}
-                    alt={`${member.name}, ${member.role} at getranked.ng`}
+                    alt={`${member.name}, ${member.role} at getranked`}
                     className="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
@@ -410,7 +410,7 @@ export default function About() {
       <section className="bg-[var(--bg-primary)] py-16 md:py-24">
         <div className="container-main">
           <motion.div className="text-center mb-14 max-w-[640px] mx-auto" {...fadeUpProps} custom={0}>
-            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-5 border border-[rgba(245,158,11,0.2)] bg-[rgba(245,158,11,0.1)] text-[var(--accent-amber)] text-label">
+            <span className="eyebrow inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-5 border border-[rgba(5, 150, 105,0.2)] bg-[rgba(5, 150, 105,0.1)] text-[var(--accent-amber)] text-label">
               WHAT WE BELIEVE
             </span>
             <h2 className="text-heading-1 text-[var(--text-primary)] mb-4">
@@ -483,7 +483,7 @@ export default function About() {
             transform: 'translate(-50%, -50%)',
             width: '800px',
             height: '400px',
-            background: 'radial-gradient(ellipse, rgba(245,158,11,0.15) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse, rgba(5, 150, 105,0.15) 0%, transparent 70%)',
             filter: 'blur(60px)',
           }}
         />
@@ -494,7 +494,7 @@ export default function About() {
           {...fadeUpProps}
           custom={0}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(245,158,11,0.25)] bg-[rgba(245,158,11,0.08)] text-[var(--accent-amber)] text-label">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(5, 150, 105,0.25)] bg-[rgba(5, 150, 105,0.08)] text-[var(--accent-amber)] text-label">
             <Rocket className="w-3.5 h-3.5" /> READY WHEN YOU ARE
           </div>
           <h2 className="text-display-2 text-[var(--text-primary)] mb-5">

@@ -37,10 +37,10 @@ export default function Terms() {
   const [activeId, setActiveId] = useState<string>('acceptance')
 
   useEffect(() => {
-    document.title = 'Terms of Service — getranked.ng'
+    document.title = 'Terms of Service — getranked'
     const meta = document.querySelector('meta[name="description"]')
     const description =
-      "The Terms of Service for getranked.ng — Nigeria's first SEO + GEO platform. Billing, refunds, acceptable use and governing law under Nigerian jurisdiction."
+      "The Terms of Service for getranked — Nigeria's first SEO + GEO platform. Billing, refunds, acceptable use and governing law under Nigerian jurisdiction."
     if (meta) {
       meta.setAttribute('content', description)
     } else {
@@ -79,7 +79,7 @@ export default function Terms() {
             transform: 'translateX(-50%)',
             width: '720px',
             height: '600px',
-            background: 'radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(5, 150, 105,0.12) 0%, transparent 70%)',
             filter: 'blur(80px)',
           }}
         />
@@ -87,7 +87,7 @@ export default function Terms() {
           className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(245,158,11,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(245,158,11,0.4) 1px, transparent 1px)',
+              'linear-gradient(rgba(5, 150, 105,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(5, 150, 105,0.4) 1px, transparent 1px)',
             backgroundSize: '64px 64px',
           }}
         />
@@ -100,14 +100,14 @@ export default function Terms() {
             variants={fadeUp}
             custom={0}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(245,158,11,0.25)] bg-[rgba(245,158,11,0.08)] text-[var(--accent-amber)] text-label">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 border border-[rgba(5, 150, 105,0.25)] bg-[rgba(5, 150, 105,0.08)] text-[var(--accent-amber)] text-label">
               <ScrollText className="w-3.5 h-3.5" /> LEGAL · GOVERNED BY NIGERIAN LAW
             </span>
             <h1 className="text-display-2 text-[var(--text-primary)] mb-5">
               Terms of <span className="text-gradient-amber">Service</span>
             </h1>
             <p className="text-body-lg text-[var(--text-secondary)] max-w-[640px] mb-6">
-              The agreement between you and getranked.ng. Written in plain English so you can
+              The agreement between you and getranked. Written in plain English so you can
               actually read it. Read carefully — using the service means you accept these terms.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-body-sm text-[var(--text-muted)]">
@@ -214,12 +214,12 @@ export default function Terms() {
             <Section id="acceptance" n="1" title="Acceptance of terms">
               <p>
                 These Terms of Service ("Terms") form a binding agreement between you (or the
-                business you represent) and getranked.ng ("we", "us", "the service"). They cover your
+                business you represent) and getranked ("we", "us", "the service"). They cover your
                 use of our website, dashboards, audit tools, APIs and any related services.
               </p>
               <p>
                 By creating an account, running an audit, subscribing to a plan, or otherwise using
-                getranked.ng, you confirm that you have read these Terms, that you agree to them, and
+                getranked, you confirm that you have read these Terms, that you agree to them, and
                 that you are at least 18 years old and authorised to enter into this agreement on
                 behalf of the business you represent. If you don't agree, please don't use the
                 service.
@@ -228,7 +228,7 @@ export default function Terms() {
 
             <Section id="account-registration" n="2" title="Account registration">
               <p>
-                You need an account to use most parts of getranked.ng. When you register, you agree to
+                You need an account to use most parts of getranked. When you register, you agree to
                 provide accurate, current and complete information — including a working email
                 address, a Nigerian phone number for WhatsApp delivery (where applicable), and the
                 legal name of the business you represent.
@@ -243,7 +243,7 @@ export default function Terms() {
 
             <Section id="subscription-billing" n="3" title="Subscription & billing">
               <p>
-                getranked.ng is offered on monthly and annual subscription plans, billed in Nigerian
+                getranked is offered on monthly and annual subscription plans, billed in Nigerian
                 Naira. All payments are processed through Paystack as our primary processor, with
                 Flutterwave available as a fallback for selected plans. We never store your full card
                 details — only the transaction reference and the last four digits.
@@ -274,7 +274,7 @@ export default function Terms() {
 
             <Section id="acceptable-use" n="4" title="Acceptable use">
               <p>
-                We've built getranked.ng to help Nigerian businesses grow honestly. To keep the
+                We've built getranked to help Nigerian businesses grow honestly. To keep the
                 service useful for everyone, you agree not to:
               </p>
               <ul className="list-disc pl-6 mt-3 space-y-2 text-body-lg text-[var(--text-secondary)]">
@@ -287,7 +287,7 @@ export default function Terms() {
                   databases, or proprietary data;
                 </li>
                 <li>
-                  resell, sublicense, or white-label getranked.ng without a written reseller
+                  resell, sublicense, or white-label getranked without a written reseller
                   agreement signed by both parties;
                 </li>
                 <li>
@@ -307,7 +307,7 @@ export default function Terms() {
 
             <Section id="intellectual-property" n="5" title="Intellectual property">
               <p>
-                The getranked.ng platform — including our scoring algorithms, dashboards, copy,
+                The getranked platform — including our scoring algorithms, dashboards, copy,
                 designs, logos, and documentation — is owned by us and protected by Nigerian and
                 international copyright, trademark and trade-secret law. Subscribing to a plan gives
                 you a limited, non-exclusive, non-transferable licence to use the service for your
@@ -323,7 +323,7 @@ export default function Terms() {
 
             <Section id="third-party-services" n="6" title="Third-party services">
               <p>
-                getranked.ng relies on a small number of trusted third-party services to deliver
+                getranked relies on a small number of trusted third-party services to deliver
                 payments, AI features and integrations. These currently include Paystack and
                 Flutterwave for payment processing, OpenAI for selected GEO content analysis, and the
                 Google Search Console, Google Business Profile and Google PageSpeed Insights APIs for
@@ -333,13 +333,13 @@ export default function Terms() {
                 Your use of any feature that depends on a third-party provider is also subject to
                 that provider's own terms and privacy policies. We are not responsible for outages,
                 pricing changes, or policy changes on those platforms, but we will always communicate
-                clearly when a third-party change materially affects how getranked.ng works.
+                clearly when a third-party change materially affects how getranked works.
               </p>
             </Section>
 
             <Section id="disclaimers" n="7" title="Disclaimers">
               <p>
-                getranked.ng is provided on an "as is" and "as available" basis. While we work hard
+                getranked is provided on an "as is" and "as available" basis. While we work hard
                 to deliver accurate audits, sound recommendations and reliable infrastructure, search
                 engines and AI assistants are external systems that we do not control.
               </p>
@@ -355,7 +355,7 @@ export default function Terms() {
 
             <Section id="limitation-liability" n="8" title="Limitation of liability">
               <p>
-                To the maximum extent permitted by Nigerian law, getranked.ng, its officers,
+                To the maximum extent permitted by Nigerian law, getranked, its officers,
                 employees and partners are not liable for any indirect, incidental, special,
                 consequential or punitive damages — including lost profits, lost revenue, lost data,
                 or business interruption — arising from your use of the service.
@@ -440,7 +440,7 @@ export default function Terms() {
               <div className="card-base p-6 mt-6">
                 <p className="text-label text-[var(--accent-amber)] mb-3">LEGAL DESK</p>
                 <p className="text-body-lg text-[var(--text-primary)] font-semibold mb-1">
-                  getranked.ng Limited
+                  getranked Limited
                 </p>
                 <p className="text-body-sm text-[var(--text-secondary)] mb-4">
                   Yaba, Lagos, Federal Republic of Nigeria

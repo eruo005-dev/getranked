@@ -149,7 +149,7 @@ function StepIndicator({ step }: { step: 1 | 2 | 3 }) {
               <div
                 className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
                   active
-                    ? 'bg-[var(--accent-amber)] text-[#0A0F1A] shadow-[0_0_0_4px_var(--accent-amber-glow)]'
+                    ? 'bg-[var(--accent-amber)] text-[var(--brand-on-primary)] shadow-[0_0_0_4px_var(--accent-amber-glow)]'
                     : done
                     ? 'bg-[var(--accent-green)] text-white'
                     : 'bg-[var(--bg-tertiary)] text-[var(--text-muted)] border border-[var(--border-default)]'
@@ -184,7 +184,7 @@ export default function Register() {
   const [testimonialIdx, setTestimonialIdx] = useState(0)
 
   useEffect(() => {
-    document.title = 'Create your account — getranked.ng'
+    document.title = 'Create your account — getranked'
   }, [])
 
   useEffect(() => {
@@ -222,7 +222,7 @@ export default function Register() {
   const onSubmit = async (_values: RegisterFormValues) => {
     await new Promise((r) => setTimeout(r, 1400))
     toast.success('Account created!', {
-      description: 'Welcome to getranked.ng — your trial is active.',
+      description: 'Welcome to getranked — your trial is active.',
     })
     navigate('/dashboard')
   }
@@ -232,14 +232,14 @@ export default function Register() {
   return (
     <div className="relative min-h-[calc(100dvh-64px)] grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
       {/* Mobile top banner */}
-      <div className="lg:hidden relative bg-gradient-to-br from-[#0A0F1A] via-[#111827] to-[#1A2235] text-white px-6 py-6 overflow-hidden">
+      <div className="lg:hidden relative bg-gradient-to-br from-[#04140C] via-[#0A2018] to-[#102C22] text-white px-6 py-6 overflow-hidden">
         <div className="absolute inset-0 opacity-30 pointer-events-none" style={{
           backgroundImage:
-            'radial-gradient(circle at 20% 30%, rgba(245,158,11,0.35), transparent 50%), radial-gradient(circle at 80% 70%, rgba(20,184,166,0.25), transparent 50%)',
+            'radial-gradient(circle at 20% 30%, rgba(5, 150, 105,0.35), transparent 50%), radial-gradient(circle at 80% 70%, rgba(20,184,166,0.25), transparent 50%)',
         }} />
         <div className="relative flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-[var(--accent-amber)]" />
-          <span className="text-sm font-semibold tracking-tight">getranked.ng</span>
+          <span className="text-sm font-semibold tracking-tight">getranked</span>
           <span className="ml-auto text-xs text-white/60">Free 7-day trial</span>
         </div>
       </div>
@@ -255,7 +255,7 @@ export default function Register() {
           <div className="mb-6">
             <h1 className="text-display-2 text-[var(--text-primary)] mb-2">Get found by AI</h1>
             <p className="text-body-lg text-[var(--text-secondary)]">
-              Create your getranked.ng account — free 7-day trial
+              Create your getranked account — free 7-day trial
             </p>
           </div>
 
@@ -513,7 +513,7 @@ export default function Register() {
                 onCheckedChange={(c) =>
                   setValue('agree', c === true, { shouldValidate: true })
                 }
-                className="mt-0.5 border-[var(--border-default)] data-[state=checked]:bg-[var(--accent-amber)] data-[state=checked]:border-[var(--accent-amber)] data-[state=checked]:text-[#0A0F1A]"
+                className="mt-0.5 border-[var(--border-default)] data-[state=checked]:bg-[var(--accent-amber)] data-[state=checked]:border-[var(--accent-amber)] data-[state=checked]:text-[var(--brand-on-primary)]"
               />
               <label
                 htmlFor="agree"
@@ -562,12 +562,12 @@ export default function Register() {
       </section>
 
       {/* RIGHT — Decorative panel */}
-      <aside className="hidden lg:flex relative overflow-hidden bg-[#0A0F1A] text-white">
+      <aside className="hidden lg:flex relative overflow-hidden bg-[var(--accent-green-deep)] text-white">
         <div
           className="absolute inset-0 opacity-80"
           style={{
             backgroundImage:
-              'radial-gradient(circle at 80% 20%, rgba(245,158,11,0.28), transparent 45%), radial-gradient(circle at 20% 80%, rgba(20,184,166,0.18), transparent 45%), radial-gradient(circle at 60% 50%, rgba(139,92,246,0.12), transparent 50%)',
+              'radial-gradient(circle at 80% 20%, rgba(5, 150, 105,0.28), transparent 45%), radial-gradient(circle at 20% 80%, rgba(20,184,166,0.18), transparent 45%), radial-gradient(circle at 60% 50%, rgba(139,92,246,0.12), transparent 50%)',
           }}
           aria-hidden="true"
         />

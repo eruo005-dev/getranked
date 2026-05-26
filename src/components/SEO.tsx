@@ -90,7 +90,7 @@ export function organizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: SITE_NAME,
-    legalName: 'getranked.ng',
+    legalName: 'getranked',
     url: SITE_URL,
     logo: `${SITE_URL}/logo.svg`,
     description: DEFAULT_DESCRIPTION,
