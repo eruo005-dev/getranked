@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Design Tokens - Light Mode */
+    --bg-primary: #FAFBFC;
+    --bg-secondary: #FFFFFF;
+    --bg-tertiary: #F1F5F9;
+    --bg-navbar: rgba(250, 251, 252, 0.85);
+    --bg-footer: #F1F5F9;
+    --border-default: #E2E8F0;
+    --border-hover: #CBD5E1;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
+    --accent-amber: #F59E0B;
+    --accent-amber-hover: #D97706;
+    --accent-amber-glow: rgba(245, 158, 11, 0.25);
+    --accent-green: #10B981;
+    --accent-red: #EF4444;
+    --accent-blue: #3B82F6;
+    --accent-purple: #8B5CF6;
+    --accent-teal: #14B8A6;
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(0, 0, 0, 0.08);
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+    --card: 217 33% 10%;
+    --card-foreground: 210 40% 96%;
+    --popover: 222 47% 6%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 38 92% 50%;
+    --primary-foreground: 222 47% 6%;
+    --secondary: 217 33% 12%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 217 33% 15%;
+    --muted-foreground: 215 25% 55%;
+    --accent: 217 33% 15%;
+    --accent-foreground: 210 40% 96%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 28% 20%;
+    --input: 215 28% 20%;
+    --ring: 38 92% 50%;
+    --sidebar-background: 217 33% 10%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 217 33% 15%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 215 28% 20%;
+    --sidebar-ring: 38 92% 50%;
+
+    /* Design Tokens - Dark Mode */
+    --bg-primary: #0A0F1A;
+    --bg-secondary: #111827;
+    --bg-tertiary: #1A2235;
+    --bg-navbar: rgba(10, 15, 26, 0.85);
+    --bg-footer: #070B14;
+    --border-default: #1E2D44;
+    --border-hover: #2D3F5C;
+    --text-primary: #F0F4F8;
+    --text-secondary: #8B9DBF;
+    --text-muted: #4A5E80;
+    --accent-amber: #F59E0B;
+    --accent-amber-hover: #D97706;
+    --accent-amber-glow: rgba(245, 158, 11, 0.25);
+    --accent-green: #10B981;
+    --accent-red: #EF4444;
+    --accent-blue: #3B82F6;
+    --accent-purple: #8B5CF6;
+    --accent-teal: #14B8A6;
+    --glass-bg: rgba(17, 24, 39, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] font-jakarta antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-outfit;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+  .text-display-1 {
+    @apply font-outfit font-extrabold leading-[1.05] tracking-[-0.03em];
+    font-size: clamp(40px, 6vw, 72px);
+  }
+  .text-display-2 {
+    @apply font-outfit font-bold leading-[1.1] tracking-[-0.02em];
+    font-size: clamp(28px, 4vw, 56px);
+  }
+  .text-heading-1 {
+    @apply font-outfit font-bold leading-[1.2] tracking-[-0.02em];
+    font-size: clamp(24px, 3vw, 40px);
+  }
+  .text-heading-2 {
+    @apply font-jakarta font-semibold leading-[1.25] tracking-[-0.01em];
+    font-size: clamp(20px, 2.5vw, 32px);
+  }
+  .text-heading-3 {
+    @apply font-jakarta font-semibold leading-[1.3];
+    font-size: clamp(16px, 2vw, 24px);
+  }
+  .text-body-lg {
+    @apply font-jakarta font-normal leading-[1.65];
+    font-size: clamp(16px, 1.5vw, 19px);
+  }
+  .text-body-sm {
+    @apply font-jakarta font-normal leading-[1.5] tracking-[0.01em];
+    font-size: clamp(12px, 1.2vw, 14px);
+  }
+  .text-label {
+    @apply font-jakarta font-semibold leading-[1.4] tracking-[0.05em] uppercase;
+    font-size: clamp(10px, 1vw, 12px);
+  }
+  .text-data-lg {
+    @apply font-mono font-medium leading-none tracking-[-0.02em];
+    font-size: clamp(28px, 4vw, 56px);
+  }
+  .text-data-md {
+    @apply font-mono font-medium leading-[1.1];
+    font-size: clamp(20px, 2vw, 28px);
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-jakarta font-semibold text-base
+           bg-[var(--accent-amber)] text-[#0A0F1A] transition-all duration-200
+           hover:scale-[1.03] hover:shadow-glow hover:bg-[var(--accent-amber-hover)]
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-amber)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)]
+           active:scale-[0.97];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-jakarta font-semibold text-base
+           border-[1.5px] border-[var(--border-default)] text-[var(--text-primary)] bg-transparent
+           transition-all duration-200
+           hover:border-[var(--accent-amber)] hover:text-[var(--accent-amber)]
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-amber)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)]
+           active:scale-[0.97];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-jakarta font-semibold text-sm
+           text-[var(--text-secondary)] bg-transparent
+           transition-all duration-200
+           hover:bg-[var(--bg-tertiary)] hover:text-[var(--text-primary)]
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-amber)];
+  }
+  .card-base {
+    @apply bg-[var(--bg-secondary)] border border-[var(--border-default)] rounded-2xl
+           transition-all duration-300
+           hover:border-[var(--border-hover)] hover:-translate-y-1 hover:shadow-card;
+  }
+  .glass-panel {
+    @apply bg-[var(--glass-bg)] border border-[var(--glass-border)] backdrop-blur-[16px] rounded-[20px];
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-label;
+  }
+  .eyebrow-teal {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-label text-[var(--accent-teal)];
+  }
+  .glow-border-teal {
+    @apply border border-[var(--border-default)] transition-all duration-300;
+    box-shadow: 0 0 0 1px rgba(20, 184, 166, 0.1);
+  }
+  .glow-border-teal:hover {
+    border-color: rgba(20, 184, 166, 0.4);
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.1), inset 0 0 20px rgba(20, 184, 166, 0.03);
+  }
+  .glow-border-amber {
+    @apply border-2 border-[var(--accent-amber)] rounded-[20px];
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.15), inset 0 0 20px rgba(245, 158, 11, 0.03);
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+  .stat-value {
+    @apply font-mono font-bold;
+  }
+  .heading-3 {
+    @apply font-jakarta font-semibold leading-[1.3];
+    font-size: clamp(16px, 2vw, 24px);
+  }
+  .body-sm {
+    @apply font-jakarta font-normal leading-[1.5] tracking-[0.01em];
+    font-size: clamp(12px, 1.2vw, 14px);
+  }
+}
+
+@layer utilities {
+  .text-gradient-amber {
+    @apply bg-gradient-to-r from-[var(--accent-amber)] to-[#D4A843] bg-clip-text text-transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
